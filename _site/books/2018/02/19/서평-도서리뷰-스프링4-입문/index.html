@@ -1,0 +1,822 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="review," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="">
+<meta name="keywords" content="review">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[서평][도서리뷰] 스프링4 입문">
+<meta property="og:url" content="http://localhost:4000/books/2018/02/19/%EC%84%9C%ED%8F%89-%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-%EC%8A%A4%ED%94%84%EB%A7%814-%EC%9E%85%EB%AC%B8/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="http://www.hanbit.co.kr/data/books/B9146679987_l.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[서평][도서리뷰] 스프링4 입문">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.hanbit.co.kr/data/books/B9146679987_l.jpg">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>[서평][도서리뷰] 스프링4 입문 | Just..</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/books/2018/02/19/%EC%84%9C%ED%8F%89-%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-%EC%8A%A4%ED%94%84%EB%A7%814-%EC%9E%85%EB%AC%B8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            [서평][도서리뷰] 스프링4 입문
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2018-02-19T05:24:06+09:00">
+                2018-02-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/books" itemprop="url" rel="index">
+                    <span itemprop="name">books</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p><img src="http://www.hanbit.co.kr/data/books/B9146679987_l.jpg" /></p>
+
+<p>스프링은 현재 5가 공식적으로는 최종 버전이다. 이 책은 스프링4를 다루고 있어 사실은 한발 늦었다고 생각하고 있지만, 스프링의 많은 기반이 되는 것이 현재까지는 3.2나 4에 맞춰져 있는 상황이어서 사실 지금부터 스프링을 공부하는 사람에겐 많은 변화를 가져온 5부터 공부하는 것보다는 스프링4를 먼저 공부하는 것이 좀 더 쉽게 공부하는 방법이 아닐까 생각한다.
+그런 관점에서 보면 이 책은 실 업무에서 스프링을 다루는데 필요한 거의 모든 부분을 다루고 있다고 생각이 든다.</p>
+
+<p>스프링 하면 보통 다들 생각하는 책은 Toby Lee 님의 스프링 책일 것이다.
+하지만 그 책은 스프링의 모든 것을 다루다 보니 정말 어마어마할 정도로 양이 많다.
+그 책은 공부하기 위해서 보다는 작업을 하다 reference를 찾는 용도로 사용하는 것이 더 적합하다는 생각이 들 정도로 자세하고, 스프링에 대해 자세히 다루고 있다.</p>
+
+<p>스프링을 실 업무에서 사용하고 있으나, 2% 부족함을 느끼는 개발자라면 적극적으로 이 책을 추천한다. 
+이 책은 Toby 님의 스프링 책만큼 많은 내용을 다루지는 못하고 있지만, 업무를 하면서 필요로 하는 기본적인 내용은 빠지지 않고 담아 두었다고 생각된다.</p>
+
+<p>스프링에서 가장 중요한 DI(Dependency Injection)와 AOP(Aspect oriented programming)에 대해서는 이해하기 어렵지 않도록 친절한 설명과 함께 적절한 예제로 기술되어 있어 확실하게 개념을 잡고 넘어가기에 좋다.</p>
+
+<p>이번 “스프링4 입문” 책을 보면서 한빛 미디어의 개발 서적이 점점 좋아지고 있다고 느끼게 된 점이 하나 있는데, 코드의 설명에 대한 부분이다.
+물론 이 부분은 지극히 개인적인 관점이라 다른 독자들은 어떻게 생각할지 모르겠다.
+이전의 한빛 책들을 보면 “코드에서 몇번째 줄” 이라고 기술되어 있는 경우가 많았다. 하지만 이번 책에서는 친절하게 코드별로 설명하고 있는 부분에 대해 따로 표시를 해주는 친절함을 발견할 수 있었다.</p>
+
+<p>코드가 들어간 개발 서적을 보면서 항상 불편하다고 생각했던 부분인데 적극적으로 개선해주는 모습을 보여주는 한빛 미디어의 서적을 보니 문득 편집자분의 노고가 느껴졌다.</p>
+
+<p>스프링의 전체적인 부분을 입문자의 입장에서 빠짐없이 설명하고 있다는 장점 외에도, 책을 쓰신 분의 Know-How 나 아키텍터 관점에서 프로그램을 볼 때 어떤 부분을 봐야 하는지
+어떤 부분을 신경 써야 하는지도 기술되어 있어 커리어의 목표를 아키텍터로 잡고 있는 분들에게도 많은 도움이 될 거로 생각한다.</p>
+
+<p>한 가지 아쉬운 점이라면 번역서다 보니 2017년 11월이 초판이지만 실제 책이 쓰였던 시기는 2015년도라는 점이다. 
+물론 스프링 자체가 5.0으로 넘어가기 전까지는 많은 변화가 있는 프레임워크가 아니고 현재까지도 스프링 4가 주력으로 사용되고 있기 때문에 당장 스프링 5를 공부하려는 사람이 아닌 이상 스프링이 가지는 코어 시스템의 개념을 익히고 스프링이란 프레임워크를 알아가기 위해서는 더할 나위 없는 책이라 생각된다.</p>
+
+<p>이 책 “IT 트렌드 스페셜 리포트” 는  <a href="http://www.hanbit.co.kr/store/books/look.php?p_code=B9146679987" target="_blank" rel="external">[링크]</a> 에서 확인할 수 있다.</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/review" rel="tag"># review</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/books/2018/04/13/%EC%84%9C%ED%8F%89-%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-9%EA%B0%80%EC%A7%80-%EC%82%AC%EB%A1%80%EB%A1%9C-%EC%9D%B5%ED%9E%88%EB%8A%94-%EA%B3%A0%EA%B8%89-%EC%8A%A4%ED%8C%8C%ED%81%AC-%EB%B6%84%EC%84%9D-2%ED%8C%90/" rel="next" title="[서평][도서리뷰] 9가지 사례로 익히는 고급 스파크 분석(2판)">
+                <i class="fa fa-chevron-left"></i> [서평][도서리뷰] 9가지 사례로 익히는 고급 스파크 분석(2판)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/translate/2018/01/08/%EB%B2%88%EC%97%AD-Spring-schema-references-%EC%97%90%EB%8A%94-%EB%B2%84%EC%A0%84%EC%9D%84-%EC%A0%95%ED%99%95%ED%9E%88-%EB%AA%85%EC%8B%9C%ED%95%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EA%B2%83%EC%9D%B4-%EC%A2%8B%EB%8B%A4/" rel="prev" title="[번역] Spring schema references 에는 버전을 정확히 명시하지 않는 것이 좋다.">
+                [번역] Spring schema references 에는 버전을 정확히 명시하지 않는 것이 좋다. <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/avatar.gif"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">48</span>
+                <span class="site-state-item-name">포스트를</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+

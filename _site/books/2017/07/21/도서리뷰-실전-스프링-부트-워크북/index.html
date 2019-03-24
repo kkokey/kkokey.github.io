@@ -1,0 +1,831 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="review," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="">
+<meta name="keywords" content="review">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[도서리뷰] 실전 스프링 부트 워크북">
+<meta property="og:url" content="http://localhost:4000/books/2017/07/21/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-%EC%8B%A4%EC%A0%84-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%9B%8C%ED%81%AC%EB%B6%81/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="http://www.hanbit.co.kr/data/books/B2433442478_l.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[도서리뷰] 실전 스프링 부트 워크북">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.hanbit.co.kr/data/books/B2433442478_l.jpg">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>[도서리뷰] 실전 스프링 부트 워크북 | Just..</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/books/2017/07/21/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-%EC%8B%A4%EC%A0%84-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%9B%8C%ED%81%AC%EB%B6%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            [도서리뷰] 실전 스프링 부트 워크북
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2017-07-21T07:15:46+09:00">
+                2017-07-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/Books" itemprop="url" rel="index">
+                    <span itemprop="name">Books</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p><img src="http://www.hanbit.co.kr/data/books/B2433442478_l.jpg" /></p>
+
+<p>책 이름에 “실전”이라는 이름이 붙어 있을 정도로 이 책에는 수많은 실전 예제들이 빼곡하게 채워져 있다.</p>
+
+<p>자바 프레임워크 스프링부트가 처음 나왔을 때만 해도 나는 무거운 스프링을 조금 가볍게 만든 경량화 프레임워크라고만 생각했었다.
+이런 단편적인 생각으로 책에 접근했었는데 이 책은 어느 순간 책을 읽고 있는 내가 어서 빨리 스프링부트를 사용해보고 싶다는 생각에 사로잡힐 정도로 자세하고 이해하기 쉽도록 설명이 되어 있다.</p>
+
+<p>스프링부트가 만들어지게 된 이유부터 시작해서 스프링부트가 왜 좋은지, 궁극적으로 스프링부트를 사용해서 어떤 것을 할 수 있는지, 현재 자바 기반으로 구성된 많은 시스템에서 사용하고 있는 기술들을 스프링부트에 적용하기 위해서는 어떤 것을 하면 되는지, 사람으로 말하자면 발끝부터 머리끝까지 모든 부분을 설명해주고 있다.</p>
+
+<p>물론, 책 한 권에 스프링부트의 모든 내용을 담기는 부족해서 기술적으로 아주 깊은 단계까지 설명하지는 않지만, 이전의 많은 서적이 저지른 잘못인 수박 겉핥기식의 접근이 아니라 적절한 깊이를 가지며 친절하게 설명한 부분에 대해서는 정말 찬사 받을 만하다고 생각한다.</p>
+
+<p>이 책은 저자의 깊은 고민에서 나온 결과물이라고 생각하며, 스프링부트에 대해 이렇게 쉽게 접근할 수 있도록 책을 만들어준 저자와 역자에게 감사하다.
+특히 코드 내에 변경점에 대해 진하게 처리한 부분은 정말 책을 보는 내내 “고구마를 3개쯤 먹은 후에 먹는 사이다”같은 느낌을 선사해 주었다.</p>
+
+<p>스프링부트를 스프링에 빗대어 한 줄로 설명해보면 이렇다.
+“스프링이라는 자바 프레임워크는 강력하다, 스프링부트는 그 강력함에 편리함을 더해 개발자가 코딩할 일이 없을 정도다.”</p>
+
+<p>스프링은 분명히 강력한 프레임워크이며 대형 규모의 스케일까지 커버 할 수 있을 정도로 강력하다.
+그리고 자바의 새로운 기술 스택에 맞게 계속해서 기능이 추가되고 있다.</p>
+
+<p>스프링부트는 거기에 더해 코드 10줄 + XML 설정을 추가해야 하는 부분을 설정에 필요한 XML 내용은 전부 자동으로 처리하며, 실제로는 코드 2~3줄 정도로 스프링의 모든 기능을 완벽히 수행할 수 있다는 것이 정말 놀라웠다.</p>
+
+<p>책을 보면 마치 예전의 밥 아저씨처럼 “참 쉽죠”라며 얘기하는 느낌이다.
+하지만 밥 아저씨와 다른 점은, 정말 실제로도 쉽다는 것이다.</p>
+
+<p>스프링부트를 설명하는 쉬운 책을 꼽으라면 단연 이 책을 권하고 싶다.
+앞에서도 언급 했듯이 책을 보는 동안 내 머릿속을 채운 것은 “빨리 스프링부트를 사용해보고 싶다.” 뿐이었다.
+이제 책을 다 읽었으니 서비스에 적용해 보는 일만 남은 것 같다.</p>
+
+<p>보기 드물게 정말 좋은 책이라 생각하지만, 단점이라면 단점은 스프링을 모르는 사람이 스프링부트를 배우기에는 조금 부족하다는 생각이다.
+본디 스프링부트라는 프레임워크가 스프링의 기능을 편히 수행하기 위해 만들어졌다 보니 이러한 부분에 대해서는 배려가 조금 부족하지 않았나 생각해본다.</p>
+
+<p>프로그래밍 전공 서적 중 오랜만에 맘에 드는 책을 만나 기쁘게 공부 할 수 있었다.</p>
+
+<p>[실전 스프링 부트 워크북] 책의 자세한 내용은 <a href="http://www.hanbit.co.kr/store/books/look.php?p_code=B2433442478">[링크]</a>에서 확인할 수 있다.</p>
+
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/review" rel="tag"># review</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/books/2017/08/12/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-Node-js-6-x-%EB%B8%94%EB%A3%A8%ED%94%84%EB%A6%B0%ED%8A%B8/" rel="next" title="[도서리뷰] Node.js 6.x 블루프린트">
+                <i class="fa fa-chevron-left"></i> [도서리뷰] Node.js 6.x 블루프린트
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/books/2017/07/03/%EB%A6%AC%EC%95%A1%ED%8A%B8-1/" rel="prev" title="[도서리뷰] 처음 시작하는 리액트">
+                [도서리뷰] 처음 시작하는 리액트 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/avatar.gif"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">48</span>
+                <span class="site-state-item-name">포스트를</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+

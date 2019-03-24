@@ -1,0 +1,834 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="review," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="자바스크립트는 이제 더 이상 웹뷰에서 데이터를 검증하기 위해서 쓰는 Validation 용 언어가 아니다. 구글에서 크롬브라우저에서 사용하는 V8 엔진을 개발하면서 자바스크립트 언어를 컴파일하는 시간을 빠르게 개선하면서 자바스크립트를 서버용 언어로 탈바꿈시켜버렸다. V8 엔진은 버전 업을 계속하면서 계속해서 컴파일 속도를 높이는 중이다.">
+<meta name="keywords" content="review">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[도서리뷰] Node.js 6.x 블루프린트">
+<meta property="og:url" content="http://localhost:4000/books/2017/08/12/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-Node-js-6-x-%EB%B8%94%EB%A3%A8%ED%94%84%EB%A6%B0%ED%8A%B8/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="자바스크립트는 이제 더 이상 웹뷰에서 데이터를 검증하기 위해서 쓰는 Validation 용 언어가 아니다. 구글에서 크롬브라우저에서 사용하는 V8 엔진을 개발하면서 자바스크립트 언어를 컴파일하는 시간을 빠르게 개선하면서 자바스크립트를 서버용 언어로 탈바꿈시켜버렸다. V8 엔진은 버전 업을 계속하면서 계속해서 컴파일 속도를 높이는 중이다.">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://goo.gl/TyrLq7">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[도서리뷰] Node.js 6.x 블루프린트">
+<meta name="twitter:description" content="자바스크립트는 이제 더 이상 웹뷰에서 데이터를 검증하기 위해서 쓰는 Validation 용 언어가 아니다. 구글에서 크롬브라우저에서 사용하는 V8 엔진을 개발하면서 자바스크립트 언어를 컴파일하는 시간을 빠르게 개선하면서 자바스크립트를 서버용 언어로 탈바꿈시켜버렸다. V8 엔진은 버전 업을 계속하면서 계속해서 컴파일 속도를 높이는 중이다.">
+<meta name="twitter:image" content="https://goo.gl/TyrLq7">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>[도서리뷰] Node.js 6.x 블루프린트 | Just..</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/books/2017/08/12/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-Node-js-6-x-%EB%B8%94%EB%A3%A8%ED%94%84%EB%A6%B0%ED%8A%B8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            [도서리뷰] Node.js 6.x 블루프린트
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2017-08-12T13:01:08+09:00">
+                2017-08-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/Books" itemprop="url" rel="index">
+                    <span itemprop="name">Books</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p>자바스크립트는 이제 더 이상 웹뷰에서 데이터를 검증하기 위해서 쓰는 Validation 용 언어가 아니다.
+구글에서 크롬브라우저에서 사용하는 V8 엔진을 개발하면서 자바스크립트 언어를 컴파일하는 시간을 빠르게 개선하면서 자바스크립트를 서버용 언어로 탈바꿈시켜버렸다.
+V8 엔진은 버전 업을 계속하면서 계속해서 컴파일 속도를 높이는 중이다.</p>
+
+<p>그 이후에 나온 첫 번째 언어가 바로 Node.js다.
+Node.js는 빠른 컴파일 속도를 지닌 V8 엔진을 동력 삼아 이벤트 기반, 논 블로킹 I/O 모델을 사용하여 자바스크립트를 훌륭한 서버 언어로 사용할 수 있게 제공하고 있다.</p>
+
+<p>이미 자바스크립트를 사용하여 개발해본 사람을 잘 알겠지만, 자바스크립트의 언어적 특성 덕분에 Node.js는 개발하기가 아주 까다로운 언어가 되어 버렸다.</p>
+
+<p>때문에 이미 개발된 많은 라이브러리를 사용해서 개발하지 않으면 많은 어려움이 따른다.
+“Node.js 6.x 블루프린트” 책은 이러한 부분의 어려움을 시원하게 긁어주고 있다.</p>
+
+<p><img src="https://goo.gl/TyrLq7" /></p>
+
+<p>다양한 프로젝트를 각각의 스타일에 어울리는 라이브러리와 함께 사용하면서 Node.js와 NPM의 개발 생태계까지 함께 경험해볼 수 있다.</p>
+
+<p>앞에서도 얘기했듯이 이 책은 총 10개의 프로젝트를 가지고 Node.js에서 구현할 수 있는 많은 기능을 테스트하고 구현한다.
+가장 기본적인 웹 애플리케이션부터 시작해서 데이터베이스, MVC 패턴을 사용한 멀티 애플리케이션, 요즘 가장 핫 하다는 빅데이터에서 사용하는 몽고DB를 사용한 검색기능, RESTful API, Socket 통신 마지막으로 지속적 개발 프로세스를 위한 Docker를 이용한 통합 배포 시스템까지 정말 광범위하게 다룬다.</p>
+
+<p>이 책을 전체적으로 보면, Node.js에서 사용해볼 수 있는 거의 모든 것을 경험해 볼 수 있다.
+개인적으로 사용하면 딱 좋을 소규모의 웹 애플리케이션부터 몽고DB와 통합 배포 시스템들로 구성하는 대형 시스템까지 만들다 보면 어느새 NPM을 사용하는 Node.js 언어의 편리함에 푹 빠져 있을 것이다.</p>
+
+<p>모든 책이 그렇듯이, 이렇게 많은 내용을 담다 보니 이 책은 코드의 양이 3분의 2가 넘는다고 느껴질 정도로 책에 코드가 참 많다.
+이렇다 보니 책의 내용을 통해 Node.js의 기능을 파악하는 것보다 코드를 통해 테스트하고, 프로젝트가 완성되었을 때의 완성작을 확인하면서 기능을 확인할 수 밖에 없다.</p>
+
+<p>그래서 자연스럽게 책의 난이도가 올라가고 내용이 지루해지는 느낌을 지우기가 힘들다.</p>
+
+<p>기능의 언어적 이해 보다는 여러 기능을 어떻게 사용하는지 확인하고 그 기능들을 사용해 프로젝트로 완성하는 것이 이 책을 읽으면서 얻을 수 있는 이득이 아닐까 생각이 든다.</p>
+
+<p>다만, 이러한 책들은 책을 읽으면서 시스템이 동작하는 프로세스를 이해하기 힘들어 각각의 프로젝트가 완성되고 어떤 방식으로 동작하는지 이해하기 위해서는 추가로 시간을 들여 따로 공부해야 한다는 점이 단점이라면 단점이다.</p>
+
+<p>그런데도 이 책은 Node.js의 많은 부분을 아우르고 있는 것은 분명하다.
+만약에 본인이 프로젝트를 진행하면서 자바스크립트의 여러기능을 사용하려면 이 책 한 권만으로도 기능들을 확인하고 테스트하기에는 부족함이 없을 것 같다.</p>
+
+<p>많은 내용을 담고 있어 이 책 한권으로 모든 것을 이해하는 것은 어렵지만,
+많은 기능을 테스트하기 위해서라면 이 책 만한 것이 없는 것 같다.</p>
+
+<p>[Node.js] 6.x 블루프린트] 책의 내용은 <a href="https://goo.gl/vGKwyi">[링크]</a>에서 확인할 수 있다.</p>
+
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/review" rel="tag"># review</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/books/2017/12/18/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-IT-%ED%8A%B8%EB%A0%8C%EB%93%9C-%EC%8A%A4%ED%8E%98%EC%85%9C-%EB%A6%AC%ED%8F%AC%ED%8A%B8-2018/" rel="next" title="[도서리뷰] IT 트렌드 스페셜 리포트 2018">
+                <i class="fa fa-chevron-left"></i> [도서리뷰] IT 트렌드 스페셜 리포트 2018
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/books/2017/07/21/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-%EC%8B%A4%EC%A0%84-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%9B%8C%ED%81%AC%EB%B6%81/" rel="prev" title="[도서리뷰] 실전 스프링 부트 워크북">
+                [도서리뷰] 실전 스프링 부트 워크북 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/avatar.gif"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">48</span>
+                <span class="site-state-item-name">포스트를</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+
