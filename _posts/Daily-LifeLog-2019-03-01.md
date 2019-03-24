@@ -1,0 +1,51 @@
+---
+title: '[Daily LifeLog] 2019/03/01'
+date: 2019-03-01 23:50:40
+categories: 라이프로그
+tags: LifeLog
+---
+
+2019년 3월 1일자 라이프로그 입니다.
+
+- 운동
+
+오늘은 휴일이니까!
+운동은 쉴께요!
+
+- 영어 공부
+
+오늘의 단어입니다.
+여러분 혹시 pick me up. 이라는 가사를 기억하시나요?
+오늘은 이 가사에 나오는 pick 이라는 단어와 미슷한 의미를 가진 choose, select에 대해 알아보겠습니다.
+
+  pick (명사)
+	→ an act or the right of selecting something from among a group of alternatives.
+	: 대체제의 그룹중에서 어떤것을 선택할 수 있는 행위 또는 권리.
+
+  pick (동사)
+	→ take hold of and remove (a flower, fruit, or vegetable) from where it is growing.
+	: 그것이 자라는 곳에서 제거하거나 붙들고 있는 것.
+	→ Detach and remove (a flower, fruit, or vegetable) from where it is growing.
+	: 그것이 자라는 곳에서 떼어내거나 제거하는 것. 
+
+  choose (동사)
+	→ pick out or select (someone or something) as being the best or most appropriate of two or more alternatives.
+	: 두개 또는 그 이상의 선택지에서 가장 적합한 것으로 골라내거나 선택하는 것 
+
+  select (동사)
+	→ carefully choose as being the best or most suitable.
+	: 최선이거나 적합한 것으로 신중하게 선택하는 것 
+
+ 음.. 3개의 단어를 찾아보고 번역을 하는 과정에서 구글 번역과 옥스포드 사전을 찾아보았는데, 
+ 구글 번역에서 단어를 선택 했을 때 나오는 내용이 어떤 사전인지는 알 수 없지만 아직은 옥스포드 사전이 
+ 훨씬 의미적으로 명확한 듯 하네요!
+ 오늘의 예문은 내일! 마무리 할께요!
+
+- 독서 로그
+
+	프로그래머를 위한 기초 해석학을 읽는 중입니다.
+
+	계속해서 실수를 읽고 있습니다.
+	개념을 완전히 이해하고 넘어가려고 하고 있는데 어렵네요. 그래도 화이팅 입니다!
+
+2019년에는 모두 같이 성장합시다!

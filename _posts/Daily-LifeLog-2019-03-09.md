@@ -1,0 +1,41 @@
+---
+title: '[Daily LifeLog] 2019/03/09'
+date: 2019-03-09 23:48:33
+categories: 라이프로그
+tags: LifeLog
+---
+
+2019년 3월 9일자 라이프로그 입니다.
+
+- 운동
+
+  주말 운동은 쉽니다!
+	대신 여행에서 엄청나게 걸었는데 증명할 방법이 없네요.
+
+- 영어 공부
+
+  오늘의 단어입니다.
+
+  competent(형용사, ADJECTIVE)
+  -> Having the necessary ability, knowledge, or skill to do something successfully.
+  : 어떤 것을 성공적으로 하기 위한 필수적인 역량, 지식, 또는 기술을 가지고 있다.
+
+  lie(동사, verb)
+  -> (of a person or animal) be in or assume a horizontal or resting position on a supporting surface.
+	: 사람이나 동물이 표면이나 바닥에 수평 또는 편한 자세를 취한다.
+
+	예문입니다.
+
+	-> Workers experience autonomy within the work organization when they feel competent to act alone.
+	: 근로자들은 조직 내에서 단독으로 행동 하는 것이 가능하다고 느낄 때 자율성을 경험합니다.
+
+	-> Lily lie on the pillows and watched him.
+	: 릴리는 배게 위에 누워서 그를 보았다.
+
+	이상입니다.
+
+- 독서 로그
+	오늘은 읽은 책은 없습니다.
+	대신, 글을 하나 썼네요. 나중에 발행되면 링크를 추가하겠습니다.
+
+2019년에는 모두 같이 성장합시다!

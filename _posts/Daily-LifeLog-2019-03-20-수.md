@@ -1,0 +1,44 @@
+---
+title: '[Daily LifeLog] 2019/03/20(수)'
+date: 2019-03-20 23:44:35
+categories: 라이프로그
+tags: LifeLog
+---
+
+2019/03/20 (수) 라이프로그 입니다.
+
+- 운동
+
+오늘도 20층 걷기 성공!!
+
+- 영어 공부
+
+  오늘의 단어입니다.
+
+  gotta(축약어, CONTRACTION)
+	-> Have got a
+	: Have got a 의 줄임말이라고 합니다~!
+
+  evaluate(동사, VERB)
+	-> Form an idea of the amount, number, or value of; assess
+	: 가치, 수, 양에 대한 아이디어를 평가하는 것
+
+	예문입니다.
+
+	-> I gotta go to work, but you wanna get some dinner later?
+	: 나는 일하러 가야 해, 나중에 저녁 먹을래?
+
+	-> the study will assist in evaluating the impact of recent changes
+	: 이 연구는 최근 변경사항의 영향 평가에 대해 도움이 될 것입니다.
+
+	이상입니다.
+
+- 독서 로그
+
+	스탠퍼드식 최고의 피로회복법을 계속 읽고 있습니다.
+
+	지금 속도라면 내일 다 읽을 수 있을 것 같네요.
+
+	좀 더 힘내 보겠습니다!
+
+2019년에는 모두 같이 성장합시다!

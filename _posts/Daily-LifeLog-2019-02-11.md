@@ -1,0 +1,38 @@
+---
+title: '[Daily LifeLog] 2019/02/11'
+date: 2019-02-11 21:27:46
+categories: 라이프로그
+tags: LifeLog
+---
+
+2019년 2월 11일자 라이프로그 입니다.
+
+- 운동
+	오늘은 원래 계획 했던 20층 계단 오르기를 성공 했습니다!
+	처음 계단을 오를 때 보다 숨은 더 차고, 허벅지가 더 튼튼해지는 느낌이었습니다.
+	얘기를 많이 해서 그런가 싶기도 합니다.
+	운동 합시다!
+
+- 영어 공부
+  lately 와 recently 의 차이점.
+	lately와 recently는 모두 최근, 요즘, 요새 라는 비슷한 의미로 사용합니다.
+
+	lately : 예전부터 현재까지 있었던 일들에 대해서 얘기 할 때 사용합니다.
+	
+	recently : 과거에는 없었지만 최근에 새롭게 있었던 일들에 대해 얘기 할 때 사용합니다.
+
+	문장을 만들어 봅시다!
+	Recently I developed mobile application using by react native.
+	-> 최근에 나는 react native를 사용해서 모바일 어플리케이션을 개발합니다.
+
+	I study english hard lately because I will preparing to work in abroad the country.
+	-> 나는 해외에서 일하는 것을 준비하고 있기 때문에  최근에 영어공부를 열심히 합니다.
+
+	예문을 만드는 것은 어렵네요.
+
+	라이브아카데미 Youtube 채널에서 참고 하였습니다.
+
+- 독서 로그
+  음... 오늘은 독서를 하지 않았습니다.
+	자연스럽게 반성이 되네요.
+	오늘은 집에 들어가서 조금이라도 읽어야 겠습니다.
