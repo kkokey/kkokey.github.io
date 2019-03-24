@@ -64,7 +64,7 @@ counter:
     other: "총 %d개의 포스트"
 
 state:
-  posts: 포스트를
+  posts: 포스트
   pages: 페이지
   tags: 태그
   categories: 카테고리
@@ -77,7 +77,7 @@ cheers:
   great: 훌륭해요
   excellent: 완벽해요
 
-keep_on: 작성하셨군요!
+keep_on: 작성!
 
 symbol:
   comma: ', '
