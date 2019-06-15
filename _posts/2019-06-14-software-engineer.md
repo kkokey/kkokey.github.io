@@ -1,7 +1,7 @@
 ---
 title: '학교 수업에서 알려주지 않는 개발자 직군'
 date: 2019-06-14 19:24:00
-categories: review
+categories: development
 tags: software_Engineer developer development 
 ---
 
@@ -10,6 +10,8 @@ tags: software_Engineer developer development
 <b> 공지입니다.</b>
 - 블로그의 글은 제 개인적인 견해입니다.
 - 개인적으로 경험한 것들의 집합이기 때문에 실제 업계 정보와는 다를 수 있습니다.
+
+그럼 시작할께요!
 
 오늘은 개발자 직군에 대해서 설명해보려고 합니다.
 사실 개발자 라고 하면 잘 모르는 사람은 그저 컴퓨터로 코딩하는 사람들이라 생각할 수 있지만
