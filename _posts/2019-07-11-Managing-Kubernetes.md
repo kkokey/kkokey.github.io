@@ -8,6 +8,7 @@ tags: book kubernetes study hanbit
 안녕하세요, 괴짜 개발자 namedboy 입니다.
 
 <img src='https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_2605.jpg?alt=media&token=99b77265-587e-4ae7-8724-b292035fa4b0'/>
+
 여러분은 혹시 쿠버네티스를 사용해보셨나요? 아니면 혹시 도커를 업무에 쓰고 계신가요?
 만약 아직 사용하지 않으신다면 최대한 빠르게 배우신 다음에 업무에 하나씩 차근 차근 적용해보시는 것을 강력하게 추천 드립니다.
 이미 아주 많은 회사가 도커와 쿠버네티스를 사용하면서 엄청난 업무 효율호를 이뤄냈기 때문이죠.
