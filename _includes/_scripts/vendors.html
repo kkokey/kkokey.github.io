@@ -4,6 +4,7 @@
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
+  console.log(document.cookie);
 </script>
 
 {% assign js_vendors = '' %}
