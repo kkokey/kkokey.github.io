@@ -23,7 +23,7 @@ Run `npm config delete prefix` or `nvm use --delete-prefix v10.15.3 --silent` to
 메시지에 나온대로 동일하게 입력했을 때 문제가 해결된다면 참 좋겠지만, 
 그렇지 않았기에 열심히 구글링을 해보았습니다.
 
-https://stackoverflow.com/questions/34718528/nvm-is-not-compatible-with-the-npm-config-prefix-option
+[stackoverflow 링크](https://stackoverflow.com/questions/34718528/nvm-is-not-compatible-with-the-npm-config-prefix-option)
 
 위 링크에 답이 있어 추가해봅니다.
 
