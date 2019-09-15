@@ -7,11 +7,11 @@ tags: config vscode error fix solution
 
 안녕하세요, 괴짜 개발자 namedboy입니다. 😎
 
-오늘은 Visual Studio Code에서 발생하는 에러 중 하나를 해결하는 방법을 포스팅 하려고 합니다.
-심플한 내용이긴 하지만 저 같이 에러 메시지가 표시되는 것마저 짜증나는 분들을 위해 stackoverflow에 올라와 있는 내용을 가져와서 포스팅합니다.
+오늘은 Visual Studio Code에서 발생하는 에러 중 하나를 해결하는 방법을 포스팅 하려고 합니다.  
+심플한 내용이긴 하지만 저 같이 에러 메시지가 표시되는 것마저 짜증나는 분들을 위해 stackoverflow에 올라와 있는 내용을 가져와서 포스팅합니다.  
 
-아래에 보면 에러 메시지가 있습니다.
-저는 아래 메시지를 파이썬 코드를 실행한 후 터미널에서 만나게 되는데요.
+아래에 보면 에러 메시지가 있습니다.  
+저는 아래 메시지를 파이썬 코드를 실행한 후 터미널에서 만나게 되는데요.  
 아래 터미널 창을 닫았다가 열기만 하면 무조건 발생하는 에러여서 항상 눈에 거슬렸었습니다.
 
 ```bash
@@ -19,7 +19,7 @@ nvm is not compatible with the npm config "prefix" option: currently set to "/us
 Run `npm config delete prefix` or `nvm use --delete-prefix v10.15.3 --silent` to unset it.
 ```
 
-거슬리는것은 그냥 두면 안되겠지요.😁
+거슬리는것은 그냥 두면 안되겠지요.😁  
 메시지에 나온대로 동일하게 입력했을 때 문제가 해결된다면 참 좋겠지만, 
 그렇지 않았기에 열심히 구글링을 해보았습니다.
 
