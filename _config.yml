@@ -231,7 +231,7 @@ social_icons:
 
 # Sidebar Avatar
 in directory: /assets/images/blog_Profile.jpg
-#avatar:
+avatar: /assets/images/blog_Profile.jpg
 
 
 # Table Of Contents in the Sidebar
