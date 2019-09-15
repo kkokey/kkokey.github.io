@@ -58,7 +58,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true
+      comments: "true"
 
 # Atom feed
 feed:
