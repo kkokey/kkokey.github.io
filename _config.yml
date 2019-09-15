@@ -58,7 +58,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: "true"
+      comments: true
 
 # Atom feed
 feed:
@@ -231,7 +231,7 @@ social_icons:
 
 # Sidebar Avatar
 in directory: /assets/images/blog_Profile.jpg
-avatar: /assets/images/blog_Profile.jpg
+#avatar:
 
 
 # Table Of Contents in the Sidebar
@@ -378,7 +378,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname:
   count: true
   # hide comments (visitors need to click to load the comments)
