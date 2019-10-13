@@ -3,6 +3,7 @@ title: 'VSCode python terminal 에러 출력 해결법'
 date: 2019-09-16 02:00:00
 categories: environment
 tags: config vscode error fix solution
+comments: true
 ---
 
 안녕하세요, 괴짜 개발자 namedboy입니다. 😎
