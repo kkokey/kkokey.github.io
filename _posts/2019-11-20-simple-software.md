@@ -8,7 +8,7 @@ comments: true
 
 안녕하세요, 괴짜 개발자 namedboy입니다. 😎
 
-<img src='https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/simple.jpg?alt=media&token=47ec4d75-214b-41f7-b07e-d0c7321941f3z'/>
+<img src='https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/simple.jpg?alt=media&token=47ec4d75-214b-41f7-b07e-d0c7321941f3'/>
 
 오늘은 심플 소프트웨어라는 책에 대해서 리뷰를 해보려구 해요.  
 혹시 여러분이 개발자라면, 개발을 하실 때 철학이 있으신가요?  
