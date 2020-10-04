@@ -1,6 +1,6 @@
 ---
 title: '[정리] 주요 HTTP Method'
-date: 2020-09-26 18:31:00
+date: 2020-10-03 16:44:00
 categories: info
 tags: http-method api-server architect http-status
 comments: true
