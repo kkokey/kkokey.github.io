@@ -8,7 +8,7 @@ comments: true
 
 <img src='https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_8843.JPG?alt=media&token=e22af8a9-f8e1-4b47-af7d-6d3ad2945777' width='300px'/>
 
-안녕하세요 괴짜 개발자 namedboy 입니다. 😎
+안녕하세요 괴짜 개발자 namedboy 입니다.
 
 리뷰하기에 앞서 오늘은 크리스마스네요!
 이 글을 읽으시는 분 모두 메리크리스마스! 행복한 연말이 되셨으면 좋겠습니다.
