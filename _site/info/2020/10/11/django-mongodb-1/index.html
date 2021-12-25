@@ -1,0 +1,1080 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6CNQDZ');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="python,django,장고,mongodb,mac,pyenv,virtualenv,homebrew,bashrc,bash_profile,poetry," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="안녕하세요 괴짜 개발자 namedboy 입니다. 😎 django로 mongoDB를 연동해본적 있으신가요?">
+<meta name="keywords" content="python, django, 장고, mongodb, mac, pyenv, virtualenv, homebrew, bashrc, bash_profile, poetry">
+<meta property="og:type" content="article">
+<meta property="og:title" content="django 와 mongoDB 연동 (1)">
+<meta property="og:url" content="http://localhost:4000/info/2020/10/11/django-mongodb-1/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="안녕하세요 괴짜 개발자 namedboy 입니다. 😎 django로 mongoDB를 연동해본적 있으신가요?">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-10-10%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.37.12.png?alt=media&amp;token=e439b798-f53c-40e8-b352-a63e6e9ab206">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="django 와 mongoDB 연동 (1)">
+<meta name="twitter:description" content="안녕하세요 괴짜 개발자 namedboy 입니다. 😎 django로 mongoDB를 연동해본적 있으신가요?">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-10-10%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.37.12.png?alt=media&amp;token=e439b798-f53c-40e8-b352-a63e6e9ab206">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>django 와 mongoDB 연동 (1) | Just..</title>
+  
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134193084-1"></script>
+<script data-ad-client="ca-pub-1090826527330963" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134193084-1');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6CNQDZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/info/2020/10/11/django-mongodb-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/blog_Profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            django 와 mongoDB 연동 (1)
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2020-10-11T04:39:00+09:00">
+                2020-10-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/info" itemprop="url" rel="index">
+                    <span itemprop="name">info</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/info/2020/10/11/django-mongodb-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/info/2020/10/11/django-mongodb-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p>안녕하세요 괴짜 개발자 namedboy 입니다. 😎
+django로 mongoDB를 연동해본적 있으신가요?</p>
+
+<p>이번에 프로젝트를 진행하면서 django와 mongoDB를 연동하는데 꽤나 어려움을 겪어서 이렇게 정리해두려고 합니다.</p>
+
+<p>django와 mongoDB를 연동 하려면 먼저 django와 mongoDB를 설치해야겠죠?ㅎ</p>
+
+<p>일단 저는 mac을 사용하고 있으니 mac을 기준으로 설명하고 다른 운영체제의 경우 참고할 링크를 추가해 두겠습니다.</p>
+
+<h2 id="python">python</h2>
+
+<p>django를 사용하기 위해서는 python이 설치가 되어 있어야 합니다.</p>
+
+<p>Mac에는 python이 기본으로 설치가 되어 있습니다.</p>
+
+<p>기본으로 설치된 파이썬의 버전은 2.7인데 저는 3.7.5를 기본으로 세팅해두고 사용하기 위해 pyenv를 설치하고 global 버전dmf 3.7.5로 설정해두었습니다.</p>
+
+<blockquote>
+  <ul>
+    <li>보통 python을 쓰는 경우 패키지 관리를 위해 사용하는 라이브러리가 있습니다.</li>
+    <li>제가 아는 방법만 해도 virtualenv,  pyenv, poetry 등 다양하게 존재하고 사용 방법과 장단점등이 모두 다르기 때문에 “pyhton 의존성 관리” 또는 “python 패키지 관리” 등의 검색을 통해 각자의 방법을 찾으시면 좋겠습니다.</li>
+    <li>이 포스팅에서는 pyenv와 pyenv-virtualenv를 사용했습니다.</li>
+  </ul>
+</blockquote>
+
+<p>Mac에서는 패키지를 편하게 설치하기 위해 homebrew를 사용하는데 설치해주시면 간단한 명령어로 편하게 패키지들을 설치할 수 있습니다.
+Homebrew는 아래 명령어를 통해 설치할 수 있습니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2</pre></td><td class="code"><pre class="highlight"><code><span class="c"># Homebrew 공식 홈페이지 : https://brew.sh/index_ko</span>
+/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>homebrew를 설치하면 <code class="language-plaintext highlighter-rouge">brew install pyenv pyenv-virtualenv</code> 명령어로 pyenv와 pyenv-virtualenv를 설치 할 수 있습니다.</p>
+
+<p>설치 후에는 <code class="language-plaintext highlighter-rouge">pyenv</code> 명령어로 설치 되었는지 확인하실 수 있습니다.
+또 아래 명령어로 설치가 가능한 목록을 확인 할 수 있죠.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3</pre></td><td class="code"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>pyenv pyenv-virtualenv
+
+<span class="nv">$ </span>pyenv <span class="nb">install</span> <span class="nt">-ll--list</span>
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>그 리스트에서 원하는 버전을 생각하시고 아래 명령어로 설치해주시면 됩니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code><span class="nv">$ </span>pyenv <span class="nb">install </span>3.8.5
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>저는 3.8.5로 설치를 했습니다.
+아래 내용이 보이고 설치가 완료되었네요.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8</pre></td><td class="code"><pre class="highlight"><code>python-build: use openssl@1.1 from homebrew
+python-build: use readline from homebrew
+Downloading Python-3.8.5.tar.xz...
+-&gt; https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tar.xz
+Installing Python-3.8.5...
+python-build: use readline from homebrew
+python-build: use zlib from xcode sdk
+Installed Python-3.8.5 to /Users/aron/.pyenv/versions/3.8.5
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>설치한 이후에는 아래 처럼 .bashrc 또는 .zshrc 에 터미널을 실행시 자동으로 실행되도록 설정을 해줍니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6</pre></td><td class="code"><pre class="highlight"><code><span class="c"># vi ~/.zshrc</span>
+
+<span class="c"># pyenv config</span>
+<span class="nb">export </span><span class="nv">PYENV_PATH</span><span class="o">=</span><span class="nv">$HOME</span>/.pyenv
+<span class="k">if </span>which pyenv <span class="o">&gt;</span> /dev/null<span class="p">;</span> <span class="k">then </span><span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>pyenv init -<span class="si">)</span><span class="s2">"</span><span class="p">;</span> <span class="k">fi
+if </span>which pyenv-virtualenv-init <span class="o">&gt;</span> /dev/null<span class="p">;</span> <span class="k">then </span><span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>pyenv virtualenv-init -<span class="si">)</span><span class="s2">"</span><span class="p">;</span> <span class="k">fi</span>
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>아래 명령어로 현재까지 설치된 python 버전을 확인 하고 세팅할 수 있습니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9</pre></td><td class="code"><pre class="highlight"><code><span class="c"># 설치된 python 버전 확인</span>
+<span class="nv">$ </span>pyenv versions
+
+<span class="c"># 기본으로 사용하고자 하는 pyhton 버전 선택</span>
+<span class="nv">$ </span>pyenv global 3.8.5
+
+<span class="c"># python이 제대로 설치가 되었다면 pip --version 명령어가 실행 가능</span>
+<span class="nv">$ </span>pip <span class="nt">--version</span>
+pip 20.1.1 from /Users/aron/.pyenv/versions/3.8.5/lib/python3.8/site-packages/pip <span class="o">(</span>python 3.8<span class="o">)</span>
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>pip 까지 설치가 잘 되었다면 이제 Django를 설치할 차례입니다.</p>
+
+<p>프로젝트로 사용할 폴더를 하나 생성하고 <code class="language-plaintext highlighter-rouge">pip install Django==3.1.2</code> 을 실행시켜 줍니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11</pre></td><td class="code"><pre class="highlight"><code><span class="c"># 아래 명령어로 환경에서 사용할 파이썬 버전을 세팅할 수 있습니다.</span>
+<span class="c"># pyenv virtualenv &lt;python version&gt; &lt;virtualenv name&gt;</span>
+<span class="c"># 아래 명령어로 python 환경을 세팅해둡니다.</span>
+<span class="nv">$ </span>pyenv virtualenv 3.7.5 django-project
+
+<span class="nv">$ </span><span class="nb">mkdir </span>django-project
+<span class="nv">$ </span><span class="nb">cd </span>django-project
+
+<span class="c"># local 명령어로 해당 프로젝트를 사용할 때 해당 파이썬 버전을 사용하도록 설정해 줍니다.</span>
+<span class="nv">$ </span>pyenv <span class="nb">local </span>django-project
+<span class="nv">$ </span>pip <span class="nb">install </span><span class="nv">Django</span><span class="o">==</span>3.1.2
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>django까지 설치 하고 나면 아래 명령어로 내가 원하는 버전으로 설치가 되었는지 확인합니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11</pre></td><td class="code"><pre class="highlight"><code><span class="nv">$ </span>python
+Python 3.7.5 <span class="o">(</span>default, Dec 10 2019, 12:26:40<span class="o">)</span>
+<span class="o">[</span>Clang 11.0.0 <span class="o">(</span>clang-1100.0.33.12<span class="o">)]</span> on darwin
+Type <span class="s2">"help"</span>, <span class="s2">"copyright"</span>, <span class="s2">"credits"</span> or <span class="s2">"license"</span> <span class="k">for </span>more information.
+<span class="o">&gt;&gt;&gt;</span> import django
+<span class="o">&gt;&gt;&gt;</span> print<span class="o">(</span>django.get_version<span class="o">())</span>
+3.1.2
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">exit</span><span class="o">()</span>
+
+<span class="c"># 또는 아래 명령어로도 확인이 가능합니다.</span>
+<span class="nv">$ </span>python <span class="nt">-m</span> django <span class="nt">--version</span>
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>django가 설치된 걸 확인하셨으면 이제 django-admin을 사용해 mongodb와 연동할 django 샘플 프로젝트를 생성해봅시다.</p>
+
+<p>샘플 프로젝트는 <code class="language-plaintext highlighter-rouge">django-admin startproject django_mongodb</code> 명령어로 간단하게 생성할 수 있습니다.</p>
+
+<p>더 많은 정보를 알고 싶다면 <a href="[https://docs.djangoproject.com/ko/3.1/intro/tutorial01/](https://docs.djangoproject.com/ko/3.1/intro/tutorial01/)">링크</a>를 방문해 보세요.</p>
+
+<p>이제 해당 프로젝트로 이동하여 간단한 <code class="language-plaintext highlighter-rouge">django_mongodb</code> 프로젝트 서버를 실행해 봅시다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18</pre></td><td class="code"><pre class="highlight"><code><span class="c"># 만들어진 프로젝트 폴더로 들어갑니다.</span>
+<span class="nv">$ </span><span class="nb">cd </span>django_mongodb 
+
+<span class="c"># 먼저 migrate를 해주어야 합니다.</span>
+<span class="c"># 서버 실행을 위한 관련 데이터베이스와 테이블을 생성해줍니다.</span>
+<span class="nv">$ </span>python <span class="o">[</span>manage.py]<span class="o">(</span>http://manage.py/<span class="o">)</span> migrate
+
+<span class="c"># 서버 실행</span>
+<span class="nv">$ </span>python manage.py runserver
+
+Watching <span class="k">for </span>file changes with StatReloader
+Performing system checks...
+
+System check identified no issues <span class="o">(</span>0 silenced<span class="o">)</span><span class="nb">.</span>
+October 10, 2020 - 10:36:11
+Django version 3.1.2, using settings <span class="s1">'django_mongodb.settings'</span>
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>마지막 메시지가 뜬다면 성공입니다.</p>
+
+<p>메시지 내용 안에 있는 링크로 접속해보면 아래 화면처럼 보여질 겁니다.</p>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-10-10%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.37.12.png?alt=media&amp;token=e439b798-f53c-40e8-b352-a63e6e9ab206" alt="django" /></p>
+
+<p>그럼 다음 포스트에서는 django와 mongodb를 직접적으로 연결하는 내용을 다루겠습니다.</p>
+
+<p>궁금하거나 이상한 내용은 댓글로 남겨주세요!</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/python" rel="tag"># python</a>
+          
+            
+            <a href="/tag/#/django" rel="tag"># django</a>
+          
+            
+            <a href="/tag/#/%EC%9E%A5%EA%B3%A0" rel="tag"># 장고</a>
+          
+            
+            <a href="/tag/#/mongodb" rel="tag"># mongodb</a>
+          
+            
+            <a href="/tag/#/mac" rel="tag"># mac</a>
+          
+            
+            <a href="/tag/#/pyenv" rel="tag"># pyenv</a>
+          
+            
+            <a href="/tag/#/virtualenv" rel="tag"># virtualenv</a>
+          
+            
+            <a href="/tag/#/homebrew" rel="tag"># homebrew</a>
+          
+            
+            <a href="/tag/#/bashrc" rel="tag"># bashrc</a>
+          
+            
+            <a href="/tag/#/bash_profile" rel="tag"># bash_profile</a>
+          
+            
+            <a href="/tag/#/poetry" rel="tag"># poetry</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/review/2020/10/26/webassembly-in-action/" rel="next" title="[도서 리뷰] WebAssembly in Action">
+                <i class="fa fa-chevron-left"></i> [도서 리뷰] WebAssembly in Action
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/info/2020/10/06/crawling/" rel="prev" title="[크롤링] 크롤링을 할 때 고려해야 하는 것들">
+                [크롤링] 크롤링을 할 때 고려해야 하는 것들 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            목차
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            흝어보기
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/blog_Profile.jpg"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description">kkokey blog repository</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">103</span>
+                <span class="site-state-item-name">포스트</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">344</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class=nav>
+      <li class="nav-item nav-level-2"> <a class="nav-link" href="#python"> <span class="nav-number">1</span> <span class="nav-text">python</span> </a> </li>
+    </ol>
+  </div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+  console.log(document.cookie);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://namedboy.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'http://localhost:4000/info/2020/10/11/django-mongodb-1/';
+              this.page.identifier = '/info/2020/10/11/django-mongodb-1/';
+              this.page.title = 'django 와 mongoDB 연동 (1)';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://namedboy.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+

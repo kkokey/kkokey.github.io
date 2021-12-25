@@ -1,0 +1,910 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6CNQDZ');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="book,kubernetes,study,hanbit," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="안녕하세요, 괴짜 개발자 namedboy 입니다.😁">
+<meta name="keywords" content="book, kubernetes, study, hanbit">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[도서리뷰] Managing Kubernetes">
+<meta property="og:url" content="http://localhost:4000/review/2019/07/12/Managing-Kubernetes/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="안녕하세요, 괴짜 개발자 namedboy 입니다.😁">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_2605.jpg?alt=media&amp;token=99b77265-587e-4ae7-8724-b292035fa4b0">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[도서리뷰] Managing Kubernetes">
+<meta name="twitter:description" content="안녕하세요, 괴짜 개발자 namedboy 입니다.😁">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_2605.jpg?alt=media&amp;token=99b77265-587e-4ae7-8724-b292035fa4b0">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>[도서리뷰] Managing Kubernetes | Just..</title>
+  
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134193084-1"></script>
+<script data-ad-client="ca-pub-1090826527330963" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134193084-1');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6CNQDZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/review/2019/07/12/Managing-Kubernetes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/blog_Profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            [도서리뷰] Managing Kubernetes
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2019-07-12T08:31:00+09:00">
+                2019-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/review" itemprop="url" rel="index">
+                    <span itemprop="name">review</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/review/2019/07/12/Managing-Kubernetes/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/review/2019/07/12/Managing-Kubernetes/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p>안녕하세요, 괴짜 개발자 namedboy 입니다.😁</p>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_2605.jpg?alt=media&amp;token=99b77265-587e-4ae7-8724-b292035fa4b0" /></p>
+
+<p>여러분은 혹시 쿠버네티스를 사용해보셨나요? 아니면 혹시 도커를 업무에 쓰고 계신가요?</p>
+
+<p>만약 아직 사용하지 않으신다면 최대한 빠르게 배우신 다음에 업무에 하나씩 차근 차근 적용해보시는 것을 강력하게 추천 드립니다.
+이미 아주 많은 회사가 도커와 쿠버네티스를 사용하면서 엄청난 업무 효율호를 이뤄냈기 때문이죠.</p>
+
+<p>도커는 컨테이너라는 개념을 사용하여 개발자가 만들어내는 애플리케이션을 쉽게 패키징하여 구축과 테스트 및 배포를 쉽게 할 수 있도록 지원하는 소프트웨어 플랫폼입니다.<br />
+패키징하여 관리할 수 있다는 장점 때문에 이미 많은 회사에서 도커를 사용하여 개발을 진행하고 있습니다.<br />
+패키징된 애플리케이션이라 새롭게 설치하거나 서버를 켜서 세팅할 필요가 전혀 없어지게 되죠.<br />
+설정이나 OS 환경을 구축하기 위해 매번 동일한 작업을 하지 않아도 되죠. <br />
+패키징된 도커 컨테이너를 올리기만 하면 뿜 하고 서버가 실행 되니까요.<br />
+덕분에 분산시스템에 더 최적화된 개발을 할 수 있게 됩니다.<br />
+애플리케이션 단위를 좀 더 잘게 나눠서 패키징 하면 각각의 기능에 대해 유지보수를 더 쉽게 할 수 있도록 도와줍니다.<br />
+대신에 새로운 문제가 생기게 됩니다. <br />
+도커를 사용해서 더 작은 단위의 크기로 애플리케이션을 만들면서 더 많은 애플리케이션 컨테이너가 생기게 됩니다.<br />
+전통적인 소프트웨어 방식은 하나의 애플리케이션에 여러개의 기능을 담아서 처리하도록 만드는 방식이었습니다만, 도커 컨테이너를 도입하면서 그 많은 기능들이 전부 각각 하나의 어플리케이션으로 동작하게 되었습니다.<br />
+이러한 구조를 사용하는 방식을 마이크로서비스 아키텍처라고 합니다.<br />
+하지만 언제나 장점과 단점은 공존합니다.<br />
+이 마이크로서비스 아키텍처도 당연히 장점만 존재하지 않습니다.<br />
+서비스의 규모에 따라 운영 방식에 따라 작업이 더 늘어나게 되는 경우도 생깁니다.<br />
+아주 큰 규모가 아니라고 하더라도 여러개의 도커 컨테이너를 관리하는 것 자체는 쉬운일은 아닙니다.<br />
+컨테이너를 업데이트 하는 일이나 컨테이너에 문제가 발생한 경우 또는 각각의 컨테이너가 통신을 하는 방법도 운영하는 입장에서는 쉽지 않은 문제로 인식됩니다.<br />
+그래서 컨테이너 오케스트레이션 플랫폼이 생겨나게 됩니다.<br />
+쿠버네티스는 이 컨테이너 오케스트레이션 플랫폼중 하나인데 구글에서 10년 이상의 시간동안 내부에서 사용하고 외부로 공개한 오픈소스 입니다.<br />
+구글 내부에서 먼저 테스트하면서 검증을 거치기 때문에 안정성도 높고 운영에 필요한 다양한 기능들을 담고 있습니다.<br />
+제가 읽은 책 Managing Kubernetes에는 쿠버네티스에서 지원하는 기능들의 상세한 소개와 실제 쿠버네티스 클러스터를 운영할 때 도움이 되는 직접적인 내용들을 다루고 있습니다.<br /></p>
+
+<p>쿠버네티스에 대해 다루는 책인 만큼 앞부분에서는 쿠버네티스가 어떤 것인지에 대한 내용도 같이 다루고 있습니다.<br />
+인프라 엔지니어로 일을 하고 계신 분이라면 쉽게 이해할 수 있을 만한 내용들입니다.<br />
+저는 개발자지만 배포나 테스트 CI/CD와 관련해서 쿠버네티스를 어떤식으로 활용하면 좋을지에 대해 고민하고 사용했었습니다.<br />
+그 때는 따로 책을 사지 않고 쿠버네티스의 메뉴얼을 보면서 진행 했습니다.<br />
+사용해보니 발견 할 수 있었던 문제점들이 많았는데 이 책을 읽다보니 그 때 문제들을 어떻게 풀어야 하는지에 대해 방법적인 많은 해결방법을 찾을 수 있었습니다.<br />
+정말 실질적으로 도움이 되는 책이라고 생각이 들었습니다.<br />
+다만 초심자용은 아니기 때문에 초보자라면 개념적인 부분을 충분히 이해하신 뒤에 책을 읽는 것을 추천 드립니다.<br />
+만약 쿠버네티스를 운영하고 있고 여러 문제점들을 해결해야 하는 상황이라면 이 책이 많은 도움이 되실꺼라 생각합니다.<br /></p>
+
+<p>Managing Kubernetes는 <a href="http://www.hanbit.co.kr/store/books/look.php?p_code=B4102990130">이곳</a>에서 구매가 가능합니다.</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/book" rel="tag"># book</a>
+          
+            
+            <a href="/tag/#/kubernetes" rel="tag"># kubernetes</a>
+          
+            
+            <a href="/tag/#/study" rel="tag"># study</a>
+          
+            
+            <a href="/tag/#/hanbit" rel="tag"># hanbit</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/review/2019/08/10/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-%EA%B9%80%EA%B8%B0%ED%98%84%EC%9D%98-%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC-%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%BA%A0%ED%94%84/" rel="next" title="[도서리뷰] 김기현의 자연어 처리 딥러닝 캠프">
+                <i class="fa fa-chevron-left"></i> [도서리뷰] 김기현의 자연어 처리 딥러닝 캠프
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/review/2019/06/15/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-%ED%98%BC%EC%9E%90%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94%ED%8C%8C%EC%9D%B4%EC%8D%AC/" rel="prev" title="[도서리뷰] 혼자 공부하는 파이썬">
+                [도서리뷰] 혼자 공부하는 파이썬 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/blog_Profile.jpg"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description">kkokey blog repository</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">103</span>
+                <span class="site-state-item-name">포스트</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">344</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+  console.log(document.cookie);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://namedboy.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'http://localhost:4000/review/2019/07/12/Managing-Kubernetes/';
+              this.page.identifier = '/review/2019/07/12/Managing-Kubernetes/';
+              this.page.title = '[도서리뷰] Managing Kubernetes';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://namedboy.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+

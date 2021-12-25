@@ -1,0 +1,898 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6CNQDZ');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="books,programming,bash,security,cybersecurity,developer," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="안녕하세요, 괴짜 개발자 namedboy 입니다. 😎">
+<meta name="keywords" content="books, programming, bash, security, cybersecurity, developer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[도서 리뷰] bash를 활용한 사이버 보안 운영">
+<meta property="og:url" content="http://localhost:4000/review/2020/05/01/bash%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B4%EC%95%88-%EC%9A%B4%EC%98%81/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="안녕하세요, 괴짜 개발자 namedboy 입니다. 😎">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/CybersecurityOpsWithbash.jpg?alt=media&amp;token=3f63da25-b250-4b43-9b3e-d8fe33c1f7e9">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[도서 리뷰] bash를 활용한 사이버 보안 운영">
+<meta name="twitter:description" content="안녕하세요, 괴짜 개발자 namedboy 입니다. 😎">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/CybersecurityOpsWithbash.jpg?alt=media&amp;token=3f63da25-b250-4b43-9b3e-d8fe33c1f7e9">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>[도서 리뷰] bash를 활용한 사이버 보안 운영 | Just..</title>
+  
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134193084-1"></script>
+<script data-ad-client="ca-pub-1090826527330963" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134193084-1');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6CNQDZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/review/2020/05/01/bash%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B4%EC%95%88-%EC%9A%B4%EC%98%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/blog_Profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            [도서 리뷰] bash를 활용한 사이버 보안 운영
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2020-05-01T07:18:00+09:00">
+                2020-05-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/review" itemprop="url" rel="index">
+                    <span itemprop="name">review</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/review/2020/05/01/bash%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B4%EC%95%88-%EC%9A%B4%EC%98%81/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/review/2020/05/01/bash%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B4%EC%95%88-%EC%9A%B4%EC%98%81/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p>안녕하세요, 괴짜 개발자 namedboy 입니다. 😎</p>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/CybersecurityOpsWithbash.jpg?alt=media&amp;token=3f63da25-b250-4b43-9b3e-d8fe33c1f7e9" width="300px" /></p>
+
+<p>제가 오늘 리뷰할 책은 <code class="language-plaintext highlighter-rouge">bash를 활용한 사이버 보안 운영</code> 입니다.</p>
+
+<p>보안 운영 부분은 굉장히 중요한 이슈 중 한가지 입니다.<br />
+네트워크상에서 데이터가 어떻게 흘러가는지 그리고 시스템에서 놓칠 수 있는 구멍들을 어떻게 막을 수 있는지 잘 알고 있어야 하죠.<br />
+때문에 각 운영체제에 대해서도 잘 알아햐 하고 그만큼 커맨드를 사용한 명령어에 익숙해야 합니다.<br />
+그런 의미에서 보면 이 책이 bash를 사용한 사이버 보안 운영이라는 것도 이해가 갑니다.<br />
+이 책에서는 기본적으로 bash를 사용한 프로그래밍을 합니다.<br />
+bash 명령어를 통해 시스템에 침투할 수 있는 방법들을 먼저 얘기해주고, 그 공격들을 어떻게 하면 막을 수 있을지에 대해 보안책을 설명합니다.<br />
+그 모든 것들은 bash로 프로그래밍 된 프로그램을 통해 연습할 수 있도록 해줍니다.<br />
+때문에 커맨드라인에 익숙해지고 싶은데 명령어를 익히기 위한 배움에 지치신 분들에게는 굉장히 편한 방법이 될 수 있겠네요.<br />
+먼저 공격자 입장에서 설명을 합니다.<br />
+정찰, 초기 침투, 거점 확보, 권한 상승, 내부 정찰, 횡적 이동, 존재 유지, 임무 완수 등의 표현으로 시스템에 어떻게 침투 하는지에 대해 자세하게 설명되어 있습니다.<br />
+이런 침투 방법에 대해 자세하게 설명 한 후 이것들을 어떻게 막는지 어떤 부분의 취약한 부분을 막아야 공격자에 대응을 할 수 있는지를 또 자세히 설명해주고 있습니다.<br />
+최종적으로는 시스템의 구성을 어떻게 하면 좋을지, 그리고 어떤 부분에 대해 계속해서 모니터링을 하면 좋을지 자세히 설명 되어 있습니다.</p>
+
+<p>OREILLY에서 나온 책을 번역했지만 보안 이슈에 대해 기초적으로 필요한 내용은 전부 다루고 있는 느낌을 받았고 이제 막 보안으로 진입하고자 하는 분들에게는 많은 도움이 될 책이라 생각됩니다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Cybersecurity Ops with bash</code>책은 <a href="https://www.hanbit.co.kr/store/books/look.php?p_code=B1345967931">링크</a>에서 확인 하실 수 있습니다.</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/books" rel="tag"># books</a>
+          
+            
+            <a href="/tag/#/programming" rel="tag"># programming</a>
+          
+            
+            <a href="/tag/#/bash" rel="tag"># bash</a>
+          
+            
+            <a href="/tag/#/security" rel="tag"># security</a>
+          
+            
+            <a href="/tag/#/cybersecurity" rel="tag"># cybersecurity</a>
+          
+            
+            <a href="/tag/#/developer" rel="tag"># developer</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/review/2020/06/01/spring-boot2/" rel="next" title="[도서 리뷰] 배워서 바로 쓰는 스프링 부트 2">
+                <i class="fa fa-chevron-left"></i> [도서 리뷰] 배워서 바로 쓰는 스프링 부트 2
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/review/2020/03/28/%EA%B0%9C%EB%B0%9C7%EB%85%84%EC%B0%A8_%EB%A7%A4%EB%8B%88%EC%A0%801%EC%9D%BC%EC%B0%A8/" rel="prev" title="[도서 리뷰] 개발 7년차, 매니저 1일차">
+                [도서 리뷰] 개발 7년차, 매니저 1일차 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/blog_Profile.jpg"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description">kkokey blog repository</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">103</span>
+                <span class="site-state-item-name">포스트</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">344</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+  console.log(document.cookie);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://namedboy.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'http://localhost:4000/review/2020/05/01/bash%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B4%EC%95%88-%EC%9A%B4%EC%98%81/';
+              this.page.identifier = '/review/2020/05/01/bash%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B4%EC%95%88-%EC%9A%B4%EC%98%81/';
+              this.page.title = '[도서 리뷰] bash를 활용한 사이버 보안 운영';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://namedboy.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+

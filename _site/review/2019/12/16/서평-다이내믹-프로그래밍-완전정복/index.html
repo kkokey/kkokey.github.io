@@ -1,0 +1,896 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6CNQDZ');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="books,programming,algorithm," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="안녕하세요, 괴짜 개발자 namedboy 입니다. 😎">
+<meta name="keywords" content="books, programming, algorithm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[도서 리뷰] 다이내믹 프로그래밍 완전정복">
+<meta property="og:url" content="http://localhost:4000/review/2019/12/16/%EC%84%9C%ED%8F%89-%EB%8B%A4%EC%9D%B4%EB%82%B4%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="안녕하세요, 괴짜 개발자 namedboy 입니다. 😎">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/dynamic-programming.jpg?alt=media&amp;token=31797142-ceca-4614-a7c2-81e0e52ccdcf">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[도서 리뷰] 다이내믹 프로그래밍 완전정복">
+<meta name="twitter:description" content="안녕하세요, 괴짜 개발자 namedboy 입니다. 😎">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/dynamic-programming.jpg?alt=media&amp;token=31797142-ceca-4614-a7c2-81e0e52ccdcf">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>[도서 리뷰] 다이내믹 프로그래밍 완전정복 | Just..</title>
+  
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134193084-1"></script>
+<script data-ad-client="ca-pub-1090826527330963" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134193084-1');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6CNQDZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/review/2019/12/16/%EC%84%9C%ED%8F%89-%EB%8B%A4%EC%9D%B4%EB%82%B4%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/blog_Profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            [도서 리뷰] 다이내믹 프로그래밍 완전정복
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2019-12-16T07:43:00+09:00">
+                2019-12-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/review" itemprop="url" rel="index">
+                    <span itemprop="name">review</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/review/2019/12/16/%EC%84%9C%ED%8F%89-%EB%8B%A4%EC%9D%B4%EB%82%B4%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/review/2019/12/16/%EC%84%9C%ED%8F%89-%EB%8B%A4%EC%9D%B4%EB%82%B4%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p>안녕하세요, 괴짜 개발자 namedboy 입니다. 😎</p>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/dynamic-programming.jpg?alt=media&amp;token=31797142-ceca-4614-a7c2-81e0e52ccdcf" /></p>
+
+<p>여러분은 알고리즘을 공부할 때 어떻게 하시나요?<br />
+지난번 제가 포스팅 했던 <a href="https://kkokey.github.io/review/2019/06/09/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0-%EA%B2%8C%EC%9E%84%EC%9C%BC%EB%A1%9C-%EC%9D%B5%ED%9E%88%EB%8A%94-%EC%BD%94%EB%94%A9-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/">게임으로 익히는 코딩 알고리즘</a> 책에 나오는 <a href="'http://codinggame.com/'">코딩게임</a> 같은 웹사이트도 좋고 예전부터 알고리즘 연습 사이트로 유명한 leetcode, codility도 좋다고 생각합니다.<br />
+예전에는 무조건 책을 보고 알고리즘을 연습해야 했는데 요즘은 다양한 방식으로 알고리즘을 풀어볼 수 있는 방법이 많이 있어 프로그램 개발을 처음 접하는 분들에게 좋은 접근방법이 될 수 있다고 생각이 드네요.
+특히나 아직까지는 알고리즘 문제 해결 능력이 면접이나 코딩 테스트에서 많이 적용되고 있고 실제로 면접 전 코딩 테스트를 하는 회사도 많기 때문에 일종의 취직 준비단계에서 필요한 능력일지도 모르겠네요.<br />
+이러한 이유들 때문에 많은 분들이 알고리즘 문제 해결 능력을 키우고자 노력한다고 생각합니다. 그런 분들에게 저는 이 책을 추천하고 싶네요.
+사실 상향식, 하향식 이런 문제풀이 방법에 대해서는 저도 잘 모릅니다.</p>
+
+<p>10년이 넘도록 프로그램 개발을 해왔지만 알고리즘 영역보다는 다른 부분에 좀 더 치중했던 저의 경우는 문제풀이를 위한 알고리즘 문제 해결능력은 다른 분들보다 떨어진다고 생각합니다.</p>
+
+<p>물론 업무적인 부분의 능력은 다르다고 생각하지만, 언젠가는 저도 필요한 순간이 올꺼라 생각합니다. 이 책은 그런 알고리즘 문제 해결 방법에 대한 책입니다. 그 중에서도 가장 이해하기 힘든 재귀호출의 영역에 대한 부분을 좀 더 집중적으로 다루고 있습니다.</p>
+
+<p>상향식이든 하향식이든 무엇이 중요할까 라는 생각이 들긴 하지만 분명 두 부분 다 배우고 이해한다면 본인한테 맞는 방법을 찾을 수 있지 않을까하는 생각합니다.
+일반적인 알고리즘 책이 그렇듯이 문제를 해결하는 과정에서 특별함은 없어보이지만 상향식 방법을 써서 재귀호출을 설명했다는 점이 다르다면 다른 부분이겠네요.<br />
+그리고 어떤 부분에서 좀 더 효율적인 알고리즘을 구성하는지 방법에 대한 설명이 있어 문제를 해결함에 있어 좀 더 효율적인 방법을 찾으려고 하는 분이라면 분명히 도움이 될 것입니다.</p>
+
+<p>책을 전부 읽어보지는 못했지만, 어떤 상황에서 재귀호출을 쓰면 좋은지 그리고 그 중에 상향식은 어떤 면에서 좋은지를 착실하게 그리고 충분히 설명하고 있다는 생각이 많이 들었습니다.<br />
+프로그래밍 문제 해결에 대해 익숙하지 않고 어려워하는 분이라면 이러한 부분이 많은 도움이될꺼라는 생각이 많이 들었습니다.
+사실 알고리즘 문제를 풀어내는 것 역시 현실의 문제를 해결하는 방법에 있어 크게 다르지 않습니다.</p>
+
+<p>커다란 문제를 충분히 세분화 하고 충분히 세분화 되었다면 가장 빠른 문제 해결법을 사용해서 풀어내면 일반적인 문제는 거의 다 해결이 가능하다고 생각합니다.
+그 중 가장 효율적으로 문제를 풀 수 있는 방법이 바로 기존에 만들어진 알고리즘 입니다.</p>
+
+<p>알고리즘을 공부하고 싶은데 두꺼운 책을 읽기 힘든 분들에겐 <a href="http://www.hanbit.co.kr/store/books/look.php?p_code=B9440449667">다이나믹 프로그래밍 완전정복</a>이 많은 도움이 되실꺼라 생각합니다.</p>
+
+<p>꼼꼼히 보면서 여러번 연습한다면 분명 코딩 테스트에 더이상 두려워하지 않을 것입니다. :)</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/books" rel="tag"># books</a>
+          
+            
+            <a href="/tag/#/programming" rel="tag"># programming</a>
+          
+            
+            <a href="/tag/#/algorithm" rel="tag"># algorithm</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/basic/2020/01/24/di-and-ioc_1/" rel="next" title="DI와 IoC 개념 정리 #1">
+                <i class="fa fa-chevron-left"></i> DI와 IoC 개념 정리 #1
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/review/2019/11/20/simple-software/" rel="prev" title="[도서 리뷰] 심플 소프트웨어">
+                [도서 리뷰] 심플 소프트웨어 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/blog_Profile.jpg"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description">kkokey blog repository</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">103</span>
+                <span class="site-state-item-name">포스트</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">344</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+  console.log(document.cookie);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://namedboy.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'http://localhost:4000/review/2019/12/16/%EC%84%9C%ED%8F%89-%EB%8B%A4%EC%9D%B4%EB%82%B4%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/';
+              this.page.identifier = '/review/2019/12/16/%EC%84%9C%ED%8F%89-%EB%8B%A4%EC%9D%B4%EB%82%B4%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/';
+              this.page.title = '[도서 리뷰] 다이내믹 프로그래밍 완전정복';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://namedboy.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+

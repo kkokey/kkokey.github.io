@@ -1,0 +1,907 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6CNQDZ');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="개발자,developer,neural,natural,language,processing,google,bert,deep,learning," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="">
+<meta name="keywords" content="개발자, developer, neural, natural, language, processing, google, bert, deep, learning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[도서 리뷰] 구글 BERT의 정석">
+<meta property="og:url" content="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/11/22/%EA%B5%AC%EA%B8%80-bert%EC%9D%98-%EC%A0%95%EC%84%9D/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/google-bert.jpg?alt=media&amp;token=b7bfc72d-c92d-48e8-a759-7e58f4d91aab">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[도서 리뷰] 구글 BERT의 정석">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/google-bert.jpg?alt=media&amp;token=b7bfc72d-c92d-48e8-a759-7e58f4d91aab">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>[도서 리뷰] 구글 BERT의 정석 | Just..</title>
+  
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134193084-1"></script>
+<script data-ad-client="ca-pub-1090826527330963" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134193084-1');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6CNQDZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/11/22/%EA%B5%AC%EA%B8%80-bert%EC%9D%98-%EC%A0%95%EC%84%9D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/blog_Profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            [도서 리뷰] 구글 BERT의 정석
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2021-11-22T07:00:00+09:00">
+                2021-11-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0" itemprop="url" rel="index">
+                    <span itemprop="name">도서리뷰</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/11/22/%EA%B5%AC%EA%B8%80-bert%EC%9D%98-%EC%A0%95%EC%84%9D/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/11/22/%EA%B5%AC%EA%B8%80-bert%EC%9D%98-%EC%A0%95%EC%84%9D/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p><img src="https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/google-bert.jpg?alt=media&amp;token=b7bfc72d-c92d-48e8-a759-7e58f4d91aab" width="300px" /></p>
+
+<p>안녕하세요 괴짜 개발자 namedboy 입니다. 😎</p>
+
+<p>인공지능을 공부하다 보면 자연어 처리에 대해 한번쯤 관심을 가지게 됩니다. 딥러닝을 이용한 자연어 처리에는 워드투벡터, 글로브가 많이 이용되는데 BERT 역시 이러한 임베딩 방법중 한가지이다.
+책에서는 BERT를 이해하기 위해서 필요한 내용 그리고 그 이전에 자연어 처리 모델에 대한 내용을 먼저 다루고 실질적인 BERT가 동작하는 방식을 다루며 독자가 좀 더 쉽게 이해할 수 있도록 했다.
+뮬론 기본적인 딥러닝의 개념에 대해서 모른다면 다른 딥러닝의 이해를 돕는 기본 책들을 먼저 찾아보고 읽어본 후에 이 책을 읽기를 권한다.
+이 책에서는 기본적으로 딥러닝이 어떤식으로 동작하는지에 대한 이해가 뒷받침 된 상태에서 읽는 것을 전제로 하고 있다.
+책의 초반에 대상독자에 대해서 소개하는데 이미 머신러닝 업무를 수행하고 있는 사람이나 BERT를 기반으로 NLP 업무를 하고자 하는 사람들이 적합하다고 서술하고 있다.</p>
+
+<p>딥러닝에 대해 알지 못한다면 어려울 것으로 생각될만큼 일반적인 내용보다는 BERT를 동작 시키기 위해 필요하거나 좀 더 BERT에 대해 집중적으로 설명하고 있다.
+기본 이해가 있는 사람들에게는 BERT를 쓰기 위해 필요한 기본적인 내용과 활용할 수 있도록 충분한 내용을 다루고 있기에 BERT를 사용하여 NLP를 구축하는데는 많은 도움이 될꺼라 생각된다.
+추가적으로 한국어 언어 모델인 KoBERT, KoGPT2, KoBART에 대해서도 다루고 있어 단순히 BERT를 사용해 NLP 처리가 아니라 한국어 언어에 대한 처리를 하기 위해서도 도움이 될만한 부분이 책의 한 챕터로 구성되어 있다.</p>
+
+<p>구글 BERT 외에도 다른 자연어 처리 모델도 있는데 앞으로도 계속 발전해 나가는 영역인 만큼 NLP 처리 모델 중 한가지인 BERT도 한번 살펴보면 좋겠다는 생각이 든다.</p>
+
+<p>이 리뷰 내용은 한빛미디어 &lt;나는 리뷰어다&gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
+책의 내용이 궁금하다면 <a href="https://www.hanbit.co.kr/store/books/look.php?p_code=B2201215526">이곳</a>을 통해 확인할 수 있다.</p>
+
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/%EA%B0%9C%EB%B0%9C%EC%9E%90" rel="tag"># 개발자</a>
+          
+            
+            <a href="/tag/#/developer" rel="tag"># developer</a>
+          
+            
+            <a href="/tag/#/neural" rel="tag"># neural</a>
+          
+            
+            <a href="/tag/#/natural" rel="tag"># natural</a>
+          
+            
+            <a href="/tag/#/language" rel="tag"># language</a>
+          
+            
+            <a href="/tag/#/processing" rel="tag"># processing</a>
+          
+            
+            <a href="/tag/#/google" rel="tag"># google</a>
+          
+            
+            <a href="/tag/#/bert" rel="tag"># bert</a>
+          
+            
+            <a href="/tag/#/deep" rel="tag"># deep</a>
+          
+            
+            <a href="/tag/#/learning" rel="tag"># learning</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/17/create-android-signing-key-by-keytools/" rel="next" title="Android sign key 만드는 법">
+                <i class="fa fa-chevron-left"></i> Android sign key 만드는 법
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/10/25/Strengthening-deep-neural-networks/" rel="prev" title="[도서 리뷰] Strengthening Deep Neural Networks">
+                [도서 리뷰] Strengthening Deep Neural Networks <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/blog_Profile.jpg"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description">kkokey blog repository</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">103</span>
+                <span class="site-state-item-name">포스트</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">344</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+  console.log(document.cookie);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://namedboy.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/11/22/%EA%B5%AC%EA%B8%80-bert%EC%9D%98-%EC%A0%95%EC%84%9D/';
+              this.page.identifier = '/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/11/22/%EA%B5%AC%EA%B8%80-bert%EC%9D%98-%EC%A0%95%EC%84%9D/';
+              this.page.title = '[도서 리뷰] 구글 BERT의 정석';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://namedboy.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+

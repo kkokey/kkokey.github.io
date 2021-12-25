@@ -1,0 +1,965 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6CNQDZ');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="swift,ios,TIL," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="안녕하세요, 괴짜 개발자 namedboy 입니다.😗">
+<meta name="keywords" content="swift, ios, TIL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Swift로 API 호출 함수 테스트 하기">
+<meta property="og:url" content="http://localhost:4000/tutorial/2019/04/04/Swift-start/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="안녕하세요, 괴짜 개발자 namedboy 입니다.😗">
+<meta property="og:locale" content="ko">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Swift로 API 호출 함수 테스트 하기">
+<meta name="twitter:description" content="안녕하세요, 괴짜 개발자 namedboy 입니다.😗">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>Swift로 API 호출 함수 테스트 하기 | Just..</title>
+  
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134193084-1"></script>
+<script data-ad-client="ca-pub-1090826527330963" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134193084-1');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6CNQDZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/tutorial/2019/04/04/Swift-start/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/blog_Profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            Swift로 API 호출 함수 테스트 하기
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2019-04-04T08:37:00+09:00">
+                2019-04-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/tutorial" itemprop="url" rel="index">
+                    <span itemprop="name">tutorial</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/tutorial/2019/04/04/Swift-start/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/tutorial/2019/04/04/Swift-start/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p>안녕하세요, 괴짜 개발자 namedboy 입니다.😗</p>
+
+<p>오랜만의 포스팅이네요.
+회사일에 놀러가는 것 까지 겹치니 블로그를 전혀 신경 못쓰고 다시 버려두고 있네요.</p>
+
+<p>올해는 블로그를 다시 버리지 않기로 작정했기 때문에 여러가지 내용들을 포스팅 하려고 합니다!
+그중에 요즘은 ios 개발을 시작하게 되어 그와 관련된 내용을 적어보고자 합니다.</p>
+
+<p>같이 공부해요~!! 😆</p>
+
+<p>먼저 개발환경은 이렇습니다.</p>
+
+<ul>
+  <li>OS: MacOS Mojave v10.14.4</li>
+  <li>Tool: xCode, AppCode</li>
+  <li>Version: Swift 5</li>
+</ul>
+
+<p>최근에 나온 Swift 5를 사용해서 작업을 해보고 있어요.</p>
+
+<p>먼저 기본적인 세팅을 해야 하는데 이 부분은 다음에 다시 다루기로 하고 오늘은 코드 조각을 가지고 얘기를 해보려고 합니다.</p>
+
+<p>일단 호출할 API URL은 http://date.jsontest.com/?service=ip 입니다.
+간단하게 내 IP값을 JSON 형태로 반환시켜주는 URL 입니다.</p>
+
+<p>위 URL을 복사해서 curl로 요청해보면 아래와 같은 리턴 값을 줍니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10</pre></td><td class="code"><pre class="highlight"><code><span class="nv">$ </span>curl <span class="nt">-i</span> http://date.jsontest.com/?service<span class="o">=</span>ip
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: <span class="k">*</span>
+Content-Type: application/json
+X-Cloud-Trace-Context: 0215469bca9a9b0db2fe0c0ec0155ad5
+Date: Tue, 09 Apr 2019 14:53:28 GMT
+Server: Google Frontend
+Content-Length: 26
+
+<span class="o">{</span><span class="s2">"ip"</span>: <span class="s2">"211.177.225.234"</span><span class="o">}</span>
+</code></pre></td></tr></tbody></table></div></div>
+<p>바로 위에 ip값이 json 데이터 형태로 리턴된게 보이시나요?ㅎ</p>
+
+<p>그럼 본격적으로 Swift에서 호출하는 코드조각을 볼까요?</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20<br/>21</pre></td><td class="code"><pre class="highlight"><code><span class="kd">func</span> <span class="nf">getMyIP</span><span class="p">(</span><span class="nv">compilationHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UserInfo</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">guard</span> <span class="k">let</span> <span class="nv">url</span><span class="p">:</span><span class="kt">URL</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"http://date.jsontest.com/?service=ip"</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span>
+        <span class="p">}</span>
+        <span class="k">var</span> <span class="nv">urlReq</span><span class="p">:</span><span class="kt">URLRequest</span> <span class="o">=</span> <span class="kt">URLRequest</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">url</span><span class="p">)</span>
+        
+        <span class="n">urlReq</span><span class="o">.</span><span class="n">httpMethod</span> <span class="o">=</span> <span class="s">"GET"</span>
+        <span class="n">urlReq</span><span class="o">.</span><span class="n">allHTTPHeaderFields</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Content-Type"</span><span class="p">:</span><span class="s">"application/json"</span><span class="p">]</span>
+        
+        <span class="k">let</span> <span class="nv">IPTask</span> <span class="o">=</span> <span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">dataTask</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">urlReq</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">res</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span> <span class="k">in</span>
+            <span class="k">if</span> <span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="n">data</span> <span class="p">{</span>
+                <span class="k">let</span> <span class="nv">jsonData</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="kt">JSONDecoder</span><span class="p">()</span><span class="o">.</span><span class="nf">decode</span><span class="p">(</span><span class="kt">UserInfo</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">data</span><span class="p">)</span>
+                <span class="k">guard</span> <span class="k">let</span> <span class="nv">rsData</span> <span class="o">=</span> <span class="n">jsonData</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="k">return</span>
+                <span class="p">}</span>
+                <span class="nf">compilationHandler</span><span class="p">(</span><span class="n">rsData</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        
+        <span class="kt">IPTask</span><span class="o">.</span><span class="nf">resume</span><span class="p">()</span>
+    <span class="p">}</span>
+</code></pre></td></tr></tbody></table></div></div>
+<p>위와 같은 형태의 코드로 API를 호출 합니다. 대략적으로 코드가 읽히시나요?</p>
+
+<p><code class="language-plaintext highlighter-rouge">guard</code>를 사용해서 scope를 지정해주고 <code class="language-plaintext highlighter-rouge">URLRequest</code>를 사용해서 method type 세팅과 header 값을 지정해 줍니다.</p>
+
+<p>그 이후에는 url을 호출하기 위해 <code class="language-plaintext highlighter-rouge">URLSession</code>이란 것을 사용해 Task로 만들어 data 값을 받았을 때 <code class="language-plaintext highlighter-rouge">JSONDecoder()</code>를 사용해 <code class="language-plaintext highlighter-rouge">UserInfo</code>라는 모델에 데이터를 바인딩합니다.</p>
+
+<p>에러는 <code class="language-plaintext highlighter-rouge">JSONDecoder()</code>의 바로 아래 <code class="language-plaintext highlighter-rouge">guard</code>에서 다시 잡아줍니다.</p>
+
+<p>실제로 실행은 제일 하단의 <code class="language-plaintext highlighter-rouge">IPTask</code>가 가진 메소드 <code class="language-plaintext highlighter-rouge">resume()</code>를 실행하면서 내부 프로세스로 실행 됩니다.</p>
+
+<p>아래는 구조체로 사용한 <code class="language-plaintext highlighter-rouge">UserInfo</code>입니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5</pre></td><td class="code"><pre class="highlight"><code><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UserInfo</span><span class="p">:</span> <span class="kt">Codable</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="k">let</span> <span class="nv">ip</span><span class="p">:</span> <span class="kt">String</span>
+<span class="p">}</span>
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>위 코드가 제대로 실행이 되었다면 UserInfo.ip에 사용자의 IP가 들어가게 됩니다.</p>
+
+<p>코드만 가지고 간단하게 설명하려고 하니 꽤 많은 부분이 생략 되었습니다.</p>
+
+<p>어려운 부분은 아니나 Swift를 잘 모르시는 분이라면 하나하나 메소드나 사용된 클래스들의 의미를 곱씹으면서 보시다 보면 분명 API를 호출하는 것을 만드는데 무리 없이 하실 수 있으실 겁니다!</p>
+
+<p>P.S 아래 코드는 <code class="language-plaintext highlighter-rouge">info.plist</code>에 추가된 코드 입니다. 이 부분이 없으면 https가 아닌 url은 실행되지 않는다고 하네요~ 참고하시고 즐거운 코딩라이프 되세요!</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5</pre></td><td class="code"><pre class="highlight"><code><span class="nt">&lt;key&gt;</span>NSAppTransportSecurity<span class="nt">&lt;/key&gt;</span>
+	<span class="nt">&lt;dict&gt;</span>
+		<span class="nt">&lt;key&gt;</span>NSAllowsArbitraryLoads<span class="nt">&lt;/key&gt;</span>
+		<span class="nt">&lt;true/&gt;</span>
+	<span class="nt">&lt;/dict&gt;</span>
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>오늘은 여기까지 입니다!</p>
+
+<p>도움이 되었길 바라며 저는 이만 뿅!</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/swift" rel="tag"># swift</a>
+          
+            
+            <a href="/tag/#/ios" rel="tag"># ios</a>
+          
+            
+            <a href="/tag/#/TIL" rel="tag"># TIL</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/review/2019/04/21/algorithm-want-to-it/" rel="next" title="[도서리뷰]알고리즘이 욕망하는 것들">
+                <i class="fa fa-chevron-left"></i> [도서리뷰]알고리즘이 욕망하는 것들
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/tutorial/2019/03/29/ssh-add/" rel="prev" title="`ssh-agent`와 `ssh-add`를 사용해서 RSA PRIVATE KEY 등록하기">
+                `ssh-agent`와 `ssh-add`를 사용해서 RSA PRIVATE KEY 등록하기 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/blog_Profile.jpg"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description">kkokey blog repository</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">103</span>
+                <span class="site-state-item-name">포스트</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">344</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+  console.log(document.cookie);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://namedboy.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'http://localhost:4000/tutorial/2019/04/04/Swift-start/';
+              this.page.identifier = '/tutorial/2019/04/04/Swift-start/';
+              this.page.title = 'Swift로 API 호출 함수 테스트 하기';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://namedboy.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+

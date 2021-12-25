@@ -1,6 +1,6 @@
 ---
-title: '[도서 리뷰] 개발자에서 아키텍트로'
-date: 2021-12-25 11:10:00
+title: '[도서리뷰]'
+date: 2021-12-25 01:00:00
 categories: 도서리뷰
 tags: 개발자 developer software design it from programmer to software architect
 comments: true
@@ -8,7 +8,7 @@ comments: true
 
 <img src='https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_8843.JPG?alt=media&token=e22af8a9-f8e1-4b47-af7d-6d3ad2945777' width='300px'/>
 
-안녕하세요 괴짜 개발자 namedboy 입니다.
+안녕하세요 괴짜 개발자 namedboy 입니다.😎
 
 리뷰하기에 앞서 오늘은 크리스마스네요!
 이 글을 읽으시는 분 모두 메리크리스마스! 행복한 연말이 되셨으면 좋겠습니다.
@@ -38,3 +38,6 @@ comments: true
 
 이 리뷰 내용은 한빛미디어 &lt;나는 리뷰어다&gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
 책의 내용이 궁금하다면 [이곳](https://www.hanbit.co.kr/store/books/look.php?p_code=B1705050272)을 통해 확인할 수 있습니다.
+
+
+

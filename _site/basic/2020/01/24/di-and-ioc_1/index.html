@@ -1,0 +1,973 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6CNQDZ');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java,spring,fundamental,concept,notion," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="안녕하세요, 괴짜 개발자 namedboy 입니다. 😎">
+<meta name="keywords" content="java, spring, fundamental, concept, notion">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DI와 IoC 개념 정리 #1">
+<meta property="og:url" content="http://localhost:4000/basic/2020/01/24/di-and-ioc_1/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="안녕하세요, 괴짜 개발자 namedboy 입니다. 😎">
+<meta property="og:locale" content="ko">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DI와 IoC 개념 정리 #1">
+<meta name="twitter:description" content="안녕하세요, 괴짜 개발자 namedboy 입니다. 😎">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>DI와 IoC 개념 정리 #1 | Just..</title>
+  
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134193084-1"></script>
+<script data-ad-client="ca-pub-1090826527330963" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134193084-1');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6CNQDZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/basic/2020/01/24/di-and-ioc_1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/blog_Profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            DI와 IoC 개념 정리 #1
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2020-01-24T06:50:00+09:00">
+                2020-01-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/Basic" itemprop="url" rel="index">
+                    <span itemprop="name">Basic</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/basic/2020/01/24/di-and-ioc_1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/basic/2020/01/24/di-and-ioc_1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p>안녕하세요, 괴짜 개발자 namedboy 입니다. 😎</p>
+
+<p>오늘은 DI(Dependency Injection) 와 IoC(Inversion of Control) 에 대한 내용을 정리해볼까 합니다.</p>
+
+<p>DI와 IoC는 스프링에서 중요하게 쓰이는 개념이고 생각보다 많은 부분을 다루고 있습니다.<br />
+그래서 이번 글에서는 DI만 다루어 보려고 합니다.</p>
+
+<p>그럼 시작해 볼까요?</p>
+
+<p>프로그램을 개발하다 보면 Dependency 라는 것이 생깁니다. 바로 의존성이죠.</p>
+
+<p>이 의존성을 해결하는 방법에는 여러가지가 있는데 그 중 하나가 바로 코드에 직접적으로 의존하는 객체를 명시하고 해당 객체를 사용하는 것이죠.</p>
+
+<p>그 외의 방법으로는 Factory 패턴이나 JNDI 등을 사용해 의존하는 클래스를 검색하는 방법, 외부의 조립기를 사용하는 방법이 있습니다.</p>
+
+<p>스프링에서 사용하는 DI는 패턴이며 외부의 조립기를 사용하는 방식입니다.</p>
+
+<p>다음은 코드에 직접적으로 명시하는 방법입니다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Taste</code> 라는 클래스가 있다고 생각해봅시다.<br />
+코드를 보면 <code class="language-plaintext highlighter-rouge">fruityGrade</code>와 <code class="language-plaintext highlighter-rouge">lightGrade</code>에 기본값이 있고 값을 설정 하거나 불러올 수 있게 되어 있습니다.</p>
+
+<pre><code class="language-Java">class Taste {
+    private int fruityGrade = 1;
+    private int lightGrade = 1;
+
+    public int getFruityGrade() {
+        return fruityGrade;
+    }
+
+    public int getLightGrade() {
+        return lightGrade;
+    }
+
+    public void setFruityGrade(int fruityGrade) {
+        this.fruityGrade = fruityGrade;
+    }
+
+    public void setLightGrade(int lightGrade) {
+        this.lightGrade = lightGrade;
+    }
+}
+</code></pre>
+
+<p>여기 <code class="language-plaintext highlighter-rouge">Product</code>라는 클래스도 있습니다.<br />
+<code class="language-plaintext highlighter-rouge">Product</code>에서는 객체 내부에 제품의 이름과 가격 그리고 <code class="language-plaintext highlighter-rouge">Taste</code> 클래스를 내부에서 선언해 두었습니다.
+<code class="language-plaintext highlighter-rouge">Taste</code> 클래스와 마찬가지로 <code class="language-plaintext highlighter-rouge">getter</code>와 <code class="language-plaintext highlighter-rouge">setter</code> 메소드 들이 있지만 여기선 중요하지 않아 생략해두었습니다.</p>
+
+<pre><code class="language-Java">public class Product {
+
+    private String name = "";
+    private int price = 0;
+    private Taste taste;
+
+    /**
+    getter &amp; setter 생략
+    **/
+
+    public void setFruityTasteGrade(int fruityGrade, int lightGrade) {
+
+        // Taste 클래스를 사용할 수 있는 객체로 생성합니다.
+        taste = new Taste();
+        taste.setFruityGrade(fruityGrade);
+        taste.setLightGrade(lightGrade);
+    }
+}
+
+</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">Product</code>라는 클래스에서는 <code class="language-plaintext highlighter-rouge">Taste</code>를 맛으로 표현하기 위해 내부에서 선언해서 사용했는데 이 부분이 바로 코드에 직접적으로 명시하는 방법입니다.</p>
+
+<p>직접적인 명시를 하는 방법은 가장 큰 불편함이 있습니다.
+<code class="language-plaintext highlighter-rouge">Product</code>클래스에서 주석이 표시되어 있는 <code class="language-plaintext highlighter-rouge">taste = new Taste()</code> 부분입니다.<br />
+Taste 클래스를 객체로 사용하려면 <code class="language-plaintext highlighter-rouge">new</code>라는 생성자 명령어를 통해 객체화 시켜주어야 하기 때문에 바로 다음줄에 <code class="language-plaintext highlighter-rouge">taste.setFruityGrade(fruityGrade)</code>를 사용하기 위해서는 매번 <code class="language-plaintext highlighter-rouge">taste = new Taste();</code> 를 사용해 주어야 하죠. taste라는 변수도 선언이 되어 있지 않다면 Taste 클래스 타입으로 변수도 선언을 해주어야 합니다.</p>
+
+<p>매번 하면 되지 무엇이 문제냐라는 생각이 드실 수 있을꺼라 생각합니다.
+지금은 어쨌든 <code class="language-plaintext highlighter-rouge">Product</code>라는 클래스에서만 쓰고 있으니 매번 생성하면 될 것 같습니다.</p>
+
+<p>하지만 <code class="language-plaintext highlighter-rouge">Product</code>가 아니라 <code class="language-plaintext highlighter-rouge">WineType</code>이나 <code class="language-plaintext highlighter-rouge">YearOfWine</code>같은 클래스가 만들어지고 이 3개의 클래스에서 전부 <code class="language-plaintext highlighter-rouge">Taste</code>를 쓰는 상황이 만들어지고, 3개의 클래스에 전부 같은 <code class="language-plaintext highlighter-rouge">Taste</code> 값이 입력되어야 한다면 어떤가요?</p>
+
+<p>3개의 클래스에 모두 <code class="language-plaintext highlighter-rouge">Taste</code>를 넣어주고 모두 같은 값을 세팅하도록 호출을 해야 할 것입니다. 심지어 매번 호출해야 하죠. 같은 값이 제대로 입력되었는지 검증하는 단계도 필요하게 될 것입니다.</p>
+
+<p>수 많은 작업을 추가로 해야 하는 상황이 발생하죠.</p>
+
+<p>이러한 문제점들 때문에 Spring 에서는 DI 패턴을 통해 외부의 조립기로 객체를 사용하는 구조를 가지고 있습니다.</p>
+
+<p>그것도 아주 쉽게 어노테이션으로 추가를 할 수 있도록 되어 있죠.</p>
+
+<p>Spring에서는 <code class="language-plaintext highlighter-rouge">Container</code>와 <code class="language-plaintext highlighter-rouge">Bean</code>이라는 개념을 사용해서 DI를 구현해두고 있습니다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Container</code>라는 큰 바구니에 클래스들을 객체화 하여 <code class="language-plaintext highlighter-rouge">Bean</code>이라는 이름으로 담아두게 됩니다.<br />
+그 <code class="language-plaintext highlighter-rouge">Container</code>는 Spring 내에서는 @Autowire 라는 어노테이션을 통해 접근을 할 수 있도록 하여 사용할 수 있게 해두는 거죠.</p>
+
+<p>아까의 상황에서 3개의 클래스 <code class="language-plaintext highlighter-rouge">Product</code>, <code class="language-plaintext highlighter-rouge">WineType</code>, <code class="language-plaintext highlighter-rouge">YearOfWine</code> 에서 모두 <code class="language-plaintext highlighter-rouge">Taste</code>를 사용한다고 해도 데이터의 정확성이나 새롭게 객체를 생성해야 하는 문제를 <code class="language-plaintext highlighter-rouge">Container</code>가 <code class="language-plaintext highlighter-rouge">Bean</code>이라는 개념으로 객체들을 관리하게 하면서 해결한 겁니다.</p>
+
+<p>Spring에서는 이러한 방법으로 비효율적으로 객체를 선언하는 방식에서 벗어나게 되었습니다.</p>
+
+<p>다음글에서는 IoC를 한번 다뤄보겠습니다.</p>
+
+<p>참고사항으로 이 내용들은 제가 학습하기 위해 작성한 내용으로 틀린 내용이 있을 수 있습니다. :)</p>
+
+<p>그럼 저는 이만 뿅!</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/java" rel="tag"># java</a>
+          
+            
+            <a href="/tag/#/spring" rel="tag"># spring</a>
+          
+            
+            <a href="/tag/#/fundamental" rel="tag"># fundamental</a>
+          
+            
+            <a href="/tag/#/concept" rel="tag"># concept</a>
+          
+            
+            <a href="/tag/#/notion" rel="tag"># notion</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/basic/2020/03/16/What-is-the-developer-test/" rel="next" title="`개발자 테스트`란 무엇인가?">
+                <i class="fa fa-chevron-left"></i> `개발자 테스트`란 무엇인가?
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/review/2019/12/16/%EC%84%9C%ED%8F%89-%EB%8B%A4%EC%9D%B4%EB%82%B4%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/" rel="prev" title="[도서 리뷰] 다이내믹 프로그래밍 완전정복">
+                [도서 리뷰] 다이내믹 프로그래밍 완전정복 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/blog_Profile.jpg"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description">kkokey blog repository</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">103</span>
+                <span class="site-state-item-name">포스트</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">344</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+  console.log(document.cookie);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://namedboy.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'http://localhost:4000/basic/2020/01/24/di-and-ioc_1/';
+              this.page.identifier = '/basic/2020/01/24/di-and-ioc_1/';
+              this.page.title = 'DI와 IoC 개념 정리 #1';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://namedboy.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+

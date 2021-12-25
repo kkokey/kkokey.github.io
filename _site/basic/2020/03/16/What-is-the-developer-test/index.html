@@ -1,0 +1,969 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6CNQDZ');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="test,,development,,tdd," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Just.." type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="나는 개발자로서 테스트의 중요성은 아무리 강조해도 지나치지 않다고 생각한다.">
+<meta name="keywords" content="test,, development,, tdd">
+<meta property="og:type" content="article">
+<meta property="og:title" content="`개발자 테스트`란 무엇인가?">
+<meta property="og:url" content="http://localhost:4000/basic/2020/03/16/What-is-the-developer-test/">
+<meta property="og:site_name" content="Just..">
+<meta property="og:description" content="나는 개발자로서 테스트의 중요성은 아무리 강조해도 지나치지 않다고 생각한다.">
+<meta property="og:locale" content="ko">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="`개발자 테스트`란 무엇인가?">
+<meta name="twitter:description" content="나는 개발자로서 테스트의 중요성은 아무리 강조해도 지나치지 않다고 생각한다.">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>`개발자 테스트`란 무엇인가? | Just..</title>
+  
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134193084-1"></script>
+<script data-ad-client="ca-pub-1090826527330963" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134193084-1');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6CNQDZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Just..</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/basic/2020/03/16/What-is-the-developer-test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/blog_Profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just..">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            `개발자 테스트`란 무엇인가?
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="" itemprop="dateCreated datePublished" datetime="2020-03-16T06:20:00+09:00">
+                2020-03-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/Basic" itemprop="url" rel="index">
+                    <span itemprop="name">Basic</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/basic/2020/03/16/What-is-the-developer-test/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/basic/2020/03/16/What-is-the-developer-test/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p>나는 개발자로서 테스트의 중요성은 아무리 강조해도 지나치지 않다고 생각한다.</p>
+
+<p>개발 업계에서 테스트는 크게 두 가지 의미로 쓰인다고 생각한다.</p>
+
+<ol>
+  <li>개발자가 하는 개발자 테스트</li>
+  <li>QA(Quality Assurance) 부서나 팀에서 하는 품질 보증을 위한 테스트</li>
+</ol>
+
+<p>내가 얘기하고자 하는 것은 바로 1번이다.</p>
+
+<p>개발자가 만들어낸 결과물에 대해 책임지는 개발자 테스트다.</p>
+
+<p>많은 개발자가 얘기하는 TDD(Testing Driven Development)가 있다.</p>
+
+<p>개발 전 설계 단계에서 고려하여 생각한 설계 내용을 테스트를 먼저 만들면서 검증하고, 실제 기능이 동작하는 코드를 개발하는 개발 방법론 중 하나다.</p>
+
+<p>설계 후 테스트를 먼저 만드는 것이 테스트가 개발 전체를 리드한다는 개념으로 테스트 주도 개발이란 이름이 붙었다.</p>
+
+<p>여기서 내가 얘기하고 싶은 내용은 TDD는 아니라고 분명히 얘기하고 싶다.</p>
+
+<p>TDD는 내가 얘기하고자 하는 내용에서부터 2~3단계는 더 높은 수준이다.</p>
+
+<p>나는 개발하면서 아래 나열한 단계를 밟아가며 개발을 한다.</p>
+
+<ol>
+  <li>개발하고자 하는 기능의 요구사항을 정의하고 분석한다.</li>
+  <li>알고리즘 설계가 필요한가? 필요 없다면 설계가 필요한지 필요 없는지 확인한다.</li>
+  <li>주요한 핵심 기능을 1차로 설계하고 대략적인 개발 난이도를 평준화한다.</li>
+  <li>설계가 끝나면 설계한 대로 개발을 시작한다.
+    <ul>
+      <li>여기서 가능하다면 테스트 코드를 작성한다.</li>
+    </ul>
+  </li>
+  <li>개발한 결과물이 정의하고 분석한 내용과 맞는지 확인한다.</li>
+  <li>마지막으로 기능 전체를 테스트한다.</li>
+  <li>코드를 리팩토링하면서 개발을 마무리한다.</li>
+</ol>
+
+<p>이 글에서 얘기하는 테스트는 바로 6번이다.</p>
+
+<p>개발 도중 테스트는 당연하다. 물론 개발 도중 테스트가 제대로 완료된 상태라면 6번에서 큰 문제가 없이 동작해야 한다.</p>
+
+<p>하지만 개발하는 도중 기능의 테스트가 제대로 이루어지지 않았다면 6번에서 당연히 막힌다.</p>
+
+<p>그러면 해당 기능을 다시 확인하고 수정해야 한다.</p>
+
+<p>보통은 5번까지 작업하고 6번은 제대로 수행하지 않고 결과물을 운영 서버에 반영하거나 QA를 하게 된다.</p>
+
+<p>이렇게 하면 어떤 문제가 발생할까?</p>
+
+<p>일반적인 상황을 가정해보자.</p>
+
+<ul>
+  <li>개발자 A가 화면에 필요한 기능 5가지를 개발한다고 생각해보자.</li>
+  <li>기능을 3개를 만든다. 생각보다 빠르게 진행이 되었고 현재까지는 문제가 없는 것 같다.</li>
+  <li>나머지 기능 2가지는 예상하는 난도도 높고 실제로 개발하는 기간도 늘어져서 마지막에 마지막까지 개발하게 되었다.</li>
+  <li>어떻게든 일정을 맞춰서 개발을 완료했다.</li>
+  <li>하지만 전체 테스트를 못 했다. 앞에서 만든 3개의 기능은 앞서 테스트할 때 잘 동작 했으니 넘어가고 나중에 개발한 기능 2개만 테스트했다.</li>
+  <li>내가 의도 했던 대로 잘 동작하는 것을 확인했다.</li>
+</ul>
+
+<p>여기서 문제점이 무엇이라고 생각하는가?</p>
+
+<p>나도 수도 없이 했던 실수였고, 많은 개발자가 이런 부분을 놓친다고 생각한다.</p>
+
+<p>다음으로 넘어가기 전에 잠시 생각해보자.<br />
+개발자 A는 무엇을 실수한 걸까.</p>
+
+<hr />
+
+<p>눈치가 빠른 분은 발견했으리라 싶다.</p>
+
+<p>개발 결과물의 기능은 총 5가지인데 3가지는 5개 기능이 모두 개발된 후에 다시 테스트하지 않았다는 것이다.</p>
+
+<p>이유는 많았을 것이다.</p>
+
+<ul>
+  <li>개발할 시간이 부족해서..</li>
+  <li>앞에서 테스트했으니 별문제 없겠지..</li>
+  <li>마지막에 개발한 2개 기능 잘 동작하니까 괜찮겠지..</li>
+  <li>테스트하다 늦어지면 일정이 꼬이는데…</li>
+  <li>테스트는 한번 만 하면 되는 거 아닌가??</li>
+</ul>
+
+<p>어떤 이유를 대도 전부 핑계다.</p>
+
+<p>기능을 5개를 개발하겠다고 했으면 최소한 그 5개는 개발 완료 후 해당 기능이 제대로 동작하는지 전부 테스트하고 확인을 해야 했다.</p>
+
+<p>그 테스트가 완료되지 않으면 개발은 끝난 것이 아니다.</p>
+
+<p><em>“테스트는 테스트 부서에서 하는 거 아닌가요?”</em> 라고 하는 분이 계신다면 “최소한 제 기준에서는 아닙니다”라고 말씀드리고 싶다.</p>
+
+<p>나는 <code class="language-plaintext highlighter-rouge">개발자 테스트</code>를 이렇게 정의한다.</p>
+
+<ul>
+  <li>개발자가 만든 결과물에 대해서 요구사항에 부합하게 동작할 수 있도록 테스트하는 것.</li>
+</ul>
+
+<p>물론 지금까지 내가 개발한 내용을 보면 저 기준에 부합하지 않는 경우도 많다.</p>
+
+<p>지금까지 개발해오면서 개발자 테스트는 저 기준에 준하지 않으면 하지 않는 것이나 다름없다는 것을 알았다.</p>
+
+<p>부디 개발자 테스트와 QA를 혼동하는 개발자가 줄어들길 바라며 글을 줄입니다.</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/test%2C" rel="tag"># test,</a>
+          
+            
+            <a href="/tag/#/development%2C" rel="tag"># development,</a>
+          
+            
+            <a href="/tag/#/tdd" rel="tag"># tdd</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/review/2020/03/28/%EA%B0%9C%EB%B0%9C7%EB%85%84%EC%B0%A8_%EB%A7%A4%EB%8B%88%EC%A0%801%EC%9D%BC%EC%B0%A8/" rel="next" title="[도서 리뷰] 개발 7년차, 매니저 1일차">
+                <i class="fa fa-chevron-left"></i> [도서 리뷰] 개발 7년차, 매니저 1일차
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/basic/2020/01/24/di-and-ioc_1/" rel="prev" title="DI와 IoC 개념 정리 #1">
+                DI와 IoC 개념 정리 #1 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/blog_Profile.jpg"
+               alt="Aron" />
+          <p class="site-author-name" itemprop="name">Aron</p>
+           
+              <p class="site-description motion-element" itemprop="description">kkokey blog repository</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">103</span>
+                <span class="site-state-item-name">포스트</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">344</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aron</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+  console.log(document.cookie);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://namedboy.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'http://localhost:4000/basic/2020/03/16/What-is-the-developer-test/';
+              this.page.identifier = '/basic/2020/03/16/What-is-the-developer-test/';
+              this.page.title = '`개발자 테스트`란 무엇인가?';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://namedboy.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+
