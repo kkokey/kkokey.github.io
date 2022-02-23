@@ -1,5 +1,5 @@
 ---
-title: '[도서리뷰]'
+title: '[도서리뷰] 아키텍처로 가는 길'
 date: 2021-12-25 01:00:00
 categories: 도서리뷰
 tags: 개발자 developer software design it from programmer to software architect
