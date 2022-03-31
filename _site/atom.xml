@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-25T12:07:57+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰]</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect/" rel="alternate" type="text/html" title="[도서리뷰]" /><published>2021-12-25T10:00:00+09:00</published><updated>2021-12-25T10:00:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_8843.JPG?alt=media&amp;amp;token=e22af8a9-f8e1-4b47-af7d-6d3ad2945777&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-01T00:33:56+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] Building Machine Learning Powered Applications - 머신러닝 파워드 애플리케이션</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/03/31/bmlpa/" rel="alternate" type="text/html" title="[도서리뷰] Building Machine Learning Powered Applications - 머신러닝 파워드 애플리케이션" /><published>2022-03-31T21:00:00+09:00</published><updated>2022-03-31T21:00:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/03/31/bmlpa</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/03/31/bmlpa/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_9349.jpg?alt=media&amp;amp;token=21c59f10-770e-4f46-8882-f88758468883&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
+
+&lt;p&gt;여러분은 머신러닝을 얼마나 활용해 보셨나요?
+저는 항상 머신러닝에 대해서 얘기를 하다보면 지식의 한계 지점을 느낍니다.
+그만큼 제가 머신러닝에 대해 모르기도 하고 어떤식으로 머신러닝을 구상해야 할지 어렵기 때문일 겁니다.&lt;/p&gt;
+
+&lt;p&gt;머신러닝을 제대로 돌리기 위해서는 모델을 알아야 하고 그것을 또 배우는데 시간이 필요하고 그것을 잘 알지 못하면 또 머신러닝을 실행하지 못해서 어려운 것도 있습니다.&lt;/p&gt;
+
+&lt;p&gt;그런면에서 이 책에선 그런 모델을 먼저 가르쳐줍니다. 모델을 알고 나면 머신러닝을 설계하고 계획하고 수립해서 실제로 해볼 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;한걸음 나아가는 셈이죠.
+전반적으로 머신러닝에 필요한 부분들을 계획하고 실제로 돌려볼 수 있도록 가이드가 되어 있습니다.&lt;/p&gt;
+
+&lt;p&gt;더구나 요즘은 클라우드 서비스에서 충분히 머신러닝을 돌려볼 수 있기 때문에 모델을 알게 되고 데이터셋을 정리해서 계획을 세우고 배포를 하는 것을 더 쉽게 잘 할 수 있게 됩니다.&lt;/p&gt;
+
+&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B8274600462&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="머신러닝" /><category term="애플리케이션" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] AI로 일하는 기술 - 인공지능은 어떻게 일이 되는가</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/02/23/AI%EB%A1%9C-%EC%9D%BC%ED%95%98%EB%8A%94-%EA%B8%B0%EC%88%A0/" rel="alternate" type="text/html" title="[도서리뷰] AI로 일하는 기술 - 인공지능은 어떻게 일이 되는가" /><published>2022-02-23T20:00:00+09:00</published><updated>2022-02-23T20:00:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/02/23/AI%EB%A1%9C-%EC%9D%BC%ED%95%98%EB%8A%94-%EA%B8%B0%EC%88%A0</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/02/23/AI%EB%A1%9C-%EC%9D%BC%ED%95%98%EB%8A%94-%EA%B8%B0%EC%88%A0/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/AI.jpg?alt=media&amp;amp;token=3d771207-24f3-4ce6-8660-d01dbbfe769a&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.😎&lt;/p&gt;
+
+&lt;p&gt;AI는 공부할 때마다 그리고 내용을 들을 때마다 참 어렵다는 생각을 많이 하게 됩니다.
+그 이유중 하나가 사람들이 하는 질문에 선뜻 대답해주기가 어렵기 때문이라고 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;AI 전문가를 데려다 놓고 질문을 해봐도 속시원하게 대답해주지 못하는 것 같아요.
+그만큼 기술의 난이도도 높고 복잡한 내용이 함께 고려되어야 하기 때문이 아닐까 생각되네요.
+그런면에서 이책은 참 재미있는 포인트가 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;바로 목차가 질문이라는 점입니다. 아무래도 그 동안 여러 매체에서 AI가 미래산업이다 핵심산업이다 해서 얘기는 많지만 제대로된 질문과 답변을 들을 수 없기 때문에 작가분이 선택한 방식이 아닐까 하는 생각이 드네요.
+더해서 작가분이 차분하게 설명이라도 하는 듯한 느낌의 문장체도 한몱하는 것 같구요.&lt;/p&gt;
+
+&lt;p&gt;정말 친절하게도 “인공지능이 뭔가요?”부터 일반인공지능, 인공지능과 관련된 직업, 현재까지의 인공지능이 할 수 있는 것들, 산업에서 쓰이는 인공지능 마지막으로 인공지능을 통해 우리의 미래를 보고 어떤 관점에서 인공지능을 보는지 나누어 인공지능과 관련되 전반적인 내용에 대해 쉽게 이해할 수 있는 내용들로 되어 있습니다.&lt;/p&gt;
+
+&lt;p&gt;당연한 얘기겠지만 제목만 단순히 질문으로 적은것이 아닌 그에 맞는 적절한 답변도 함께 제공됩니다.
+친절한건 덤이고 일반인이 이해하기에 어렵지 않은 내용으로 쭉쭉 읽히는것은 덤입니다.&lt;/p&gt;
+
+&lt;p&gt;만약 인공지능의 1도 모르는데 인공지능으로 뭔가 해야 한다면?
+인공지능을 빠르게 이해하고 인공지능의 현 주소를 알고 싶다면?
+인공지능이 미래에는 어떤식으로 활용될지 가볍게 감이라도 잡고 싶다면?&lt;/p&gt;
+
+&lt;p&gt;이 책을 적극 추천드리고 싶습니다.
+정말 읽기 쉽고 이해하기 쉽게 쓰여 있어서 한번 읽고 나면 과거부터 현재까지의 인공지능을 빠르게 파악할 수 있으리라 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6700696024&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="software" /><category term="AI" /><category term="nft" /><category term="ai" /><category term="chip" /><category term="metaverse" /><category term="self-driving" /><category term="car" /><category term="장동인" /><category term="한빛미디어" /><category term="인간지능" /><category term="인공지능" /><category term="메타버스" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 아키텍처로 가는 길</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect/" rel="alternate" type="text/html" title="[도서리뷰] 아키텍처로 가는 길" /><published>2021-12-25T10:00:00+09:00</published><updated>2021-12-25T10:00:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_8843.JPG?alt=media&amp;amp;token=e22af8a9-f8e1-4b47-af7d-6d3ad2945777&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.😎&lt;/p&gt;
 
@@ -209,89 +254,4 @@ LEAN AI 역시 스타트업이 어떤 방식으로 성장할 수 있는가?에 �
 
 &lt;p&gt;기술적인 부분의 활용성을 늘리면서 성장하고 싶은 마케터에게 또는 마케터와 함께 개발을 하면서 마케팅 결과를 만들어내야 하는 개발자에게 추천하고 싶은 책입니다.&lt;/p&gt;
 
-&lt;p&gt;마케터로서 AI를 활용해보고 싶거나, 개발자인데 마케팅에 관심이 있는 분이라면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B8503179529&quot;&gt;링크&lt;/a&gt; 를 확인해보시기 바랍니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="lean" /><category term="ai" /><category term="사용자유치" /><category term="그로스" /><category term="마케팅" /><category term="성장" /><category term="전략" /><category term="인공지능" /><category term="oreilly" /><summary type="html"></summary></entry><entry><title type="html">[도서 리뷰] 쿼커스 쿡북</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/05/23/quarkus-cookbook/" rel="alternate" type="text/html" title="[도서 리뷰] 쿼커스 쿡북" /><published>2021-05-23T23:35:00+09:00</published><updated>2021-05-23T23:35:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/05/23/quarkus-cookbook</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/05/23/quarkus-cookbook/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/quarkus_cookbook.jpeg?alt=media&amp;amp;token=32ed0586-b60d-454a-9f41-4bdafb7b8a7a&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다. 😎&lt;/p&gt;
-
-&lt;p&gt;오늘 제가 소개해드릴 책은 쿼커스쿡북이라는 책입니다.
-한빛 미디어에서 나온 번역본이고 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;/p&gt;
-
-&lt;p&gt;요즘은 클라우드 서비스를 쓰지 않고 개발을 하는건 참 어려운 세상이죠.
-클라우드를 통해 개발을 하면서 많은 효율성을 가져다 주었고 그로 인해 개발자분들의 생산성도 많이 증가되었죠.
-그런 이유들 때문에 단순한 서비스에도 클라우드를 많이 쓰는 것 같습니다.&lt;/p&gt;
-
-&lt;p&gt;클라우드를 쓰다보면 쿠버네티스 혹은 가상화 시스템 얘기를 많이 들으실텐데 최근에 거의 표준에 가깝게 쓰이고 있는것이 바로 쿠버네티스 입니다.
-쿠버네티스는 설정이 복잡하지만 실제로 사용했을 때 적은 메모리와 CPU 사용률을 보여주기 때문에 요즘은 많은 시스템 구성에서 기본에 가깝게 사용하고 있습니다.&lt;/p&gt;
-
-&lt;p&gt;복잡한 시스템 구성도를 그리기 위해서는 필수적인 요소 중 하나가 되었습니다.
-하지만 복잡한 설정 때문에 사용자 친화적이지는 않은 것도 사실 입니다.&lt;/p&gt;
-
-&lt;p&gt;쿼커스는 쿠버네티스에서 필요한 여러 설정들 중에 처음에 시작하기에는 조금 과한 부분을 제거 하거나 자동화 하면서 더 심플하게 시작할 수 있도록 도와줍니다.
-쿼커스를 처음 시작하면서는 도커 컨테이너를 생성하는데 필요한 파일들이 기본으로 만들어지고 그랄VM이나 OpenJDK JVM 위에서 동작할 수 있도록 설정이 됩니다.&lt;/p&gt;
-
-&lt;p&gt;이렇게 만들어진 작은 단위의 쿼커스는 작은 크기의 컨테이너로 빠르게 실행되어 사용하는 입장에서 더 빠르게 코드를 작성할 수 있는 상태로 만들어줍니다.
-개발자라면 인프라를 설정하는 것보다는 코드를 개발하는데 더 노력을 쏟고 싶은 법이죠.&lt;/p&gt;
-
-&lt;p&gt;책을 보면 쿼커스를 기반으로 프로젝트를 시작할 수 있는 기본 구성부터 어떻게 실행하면 되는지까지 친절하게 알려주고 있습니다.
-아마도 개발자라면 무리 없이 따라할 수 있는 것은 물론이고 책을 보면서 하나씩 하다 보면 금새 쿼커스를 하고 계실꺼라 생각합니다.
-그만큼 심플하게 시작할 수 있게 되어 있어 사용하는 유저 입장에서는 놀라울 따름이었습니다.&lt;/p&gt;
-
-&lt;p&gt;몇년 전 스프링부트로 API 서버를 처음 실행시킬 때도 상당히 편하다는 느낌을 받았었는데, 
-이제는 쿠버네티스를 활용한 단계에서도 간단히 API 서버를 만들고 실행시킬 수 있는 단계로 왔다는 것이 기술의 개선속도가 느껴집니다.
-심지어 간편하기까지 하죠.&lt;/p&gt;
-
-&lt;p&gt;명령어 두번이면 간단한 API서버가 만들어집니다.
-그것도 쿠버네티스를 활용해서 말이죠.&lt;/p&gt;
-
-&lt;p&gt;당연한 얘기이겠지만 책을 통해 더 많은 것들을 할 수 있습니다.
-명령어 두번으로 API서버를 실행시켜보는 것은 초반 40장 정도만 읽어도 충분히 가능하고, 그 외에 개발모드 설정이나 HTTP나 HTTPS를 사용하다 보면 항상 괴롭히는 CORS 설정, 그리고 개발 할 때 정말 기본중에 기본인 로그 설정, 빌드, 배포 인프라적인 내용과 데이터베이스를 연결해서 시스템화 하는 부분을 포함하여 인증이나 권한 스프링 프레임워크의 연동 그리고 그 외에 필요한 배치 기능들을 쿼커스 부가 기능을 통해 풀어낼 수 있도록 제공하고 있습니다.&lt;/p&gt;
-
-&lt;p&gt;이 책 한권이면 쿼커스의 시작부터 일반적인 서비스 레벨의 수준까지 개발이 가능해보입니다.
-그것도 최신 기술을 활용해서 말이죠.&lt;/p&gt;
-
-&lt;p&gt;쿼커스를 활용해서 API 서버를 개발해보고자 하시는 분들은 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B8503179529&quot;&gt;링크&lt;/a&gt; 를 확인해보시기 바랍니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="쿼커스" /><category term="쿠버네티스" /><category term="네이티브" /><category term="자바" /><category term="솔루션" /><category term="한빛미디어" /><category term="quarkus" /><summary type="html"></summary></entry><entry><title type="html">[도서 리뷰] 실전 아파치 카프카</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/04/19/apache-kafka/" rel="alternate" type="text/html" title="[도서 리뷰] 실전 아파치 카프카" /><published>2021-04-19T02:10:00+09:00</published><updated>2021-04-19T02:10:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/04/19/apache-kafka</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/04/19/apache-kafka/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/apache-kafka.jpg?alt=media&amp;amp;token=2d851474-02c2-4379-bdb8-c8595c9d64f9&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다. 😎&lt;/p&gt;
-
-&lt;p&gt;아파치 카프카는 링크드인에서 링크드인 웹사이트 로그를 처리해서 웹사이트 활동을 추적하는 목적으로 개발되었습니다.
-그래서 아래의 목적을 가지고 개발이 되었습니다.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;높은 처리량으로 실시간 처리한다.&lt;/li&gt;
-  &lt;li&gt;임의의 타이밍에서 데이터를 읽는다.&lt;/li&gt;
-  &lt;li&gt;다양한 제품과 시스템에 쉽게 연동한다.&lt;/li&gt;
-  &lt;li&gt;메시지를 잃지 않는다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;카프카는 위의 목적을 실현시키기 위해 메시징 모델을 사용 합니다.
-메시징 모델은 Producer, Broker, Consumer 이 3가지 요소를 가지고 구성됩니다.&lt;/p&gt;
-
-&lt;p&gt;카프카의 메시징 모델은 여러 컨슈머가 분산 처리로 메시지를 소비하는 모델과 여러 서브스크라이버에 동일한 메시지를 전달하고, 토픽 기반으로 전달 내용을 변경하는 모델을 사용하고 있습니다. 이 두가지 모델을 실현하기 위해 컨슈머 그룹이라는 개념을 도입하여 컨슈머를 확장 구성할 수 있도록 설계하고 있습니다.&lt;/p&gt;
-
-&lt;p&gt;기본 구조는 Producer에서 메시지를 생성해서 전달하면 기본적으로 broker가 수집하고 소비자에게 전달하는 구조 입니다.&lt;/p&gt;
-
-&lt;p&gt;심플한 구조지만 확장을 위해서는 기본적으로 큐잉모델을 쓰며 실시간 처리, 임의의 타이밍에서 데이터를 읽기, 메시지를 잃지 않는다는 목적을 위해 추가적으로 필요한 구성요소가 생깁니다. 이런 목표들을 만족시키기이 위해 디스크에 영속화하고 쉬운 API를 제공하며 전달 보증의 기능이 들어가 있습니다.&lt;/p&gt;
-
-&lt;p&gt;이런 기능들 덕분에 카프카는 아래의 목적으로 구축하고 이용될 수 있습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;데이터 허브로서의 역할
-  여러 시스템 사이에서 데이터를 상호 교환합니다.&lt;/li&gt;
-  &lt;li&gt;로그 수집
-  BI 도구를 이용한 리포팅과 인공지능 분석을 위해 여러 서버에서 생성된 로그를 수집하고 축적할 곳에 연결한다.&lt;/li&gt;
-  &lt;li&gt;웹 활동 분석
-  실시간 대시보드와 이상 탐지/부정 검출 등 웹에서의 사용자 활동을 실시간으로 파악한다.&lt;/li&gt;
-  &lt;li&gt;사물인터넷
-  센서 등 다양한 디바이스에서 보낸 데이터를 수신해서 처리한 후 디바이스에 송신한다.&lt;/li&gt;
-  &lt;li&gt;이벤트 소싱
-  데이터에 대한 일련의 이벤트를 순차적으로 기록하고 CQRS 방식으로 대량의 이벤트를 유연하게 처리한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;경우에 따라서는 직접적으로 개발해야 하는 부분도 있으며 그 때문에 책에 예제가 포함되어 있으며 Java를 사용하여 기본적인 구축을 할 수 있도록 가이드 되어 있습니다.&lt;/p&gt;
-
-&lt;p&gt;카프카를 잘 모르는 사람도 기본적인 서버 개발의 지식만 있다면 충분히 따라할 수 있도록 구성되어 있어 카프카에 대한 이해를 한 층 더 높일 수 있겠다는 생각이 들었습니다.&lt;/p&gt;
-
-&lt;p&gt;카프카를 처음 도입하거나 시도해보고자 하는 분들에게는 도움이 되리라 생각합니다.&lt;/p&gt;
-
-&lt;p&gt;실전 아파치 카프카는 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B8503179529&quot;&gt;링크&lt;/a&gt; 에서 보실 수 있습니다.&lt;/p&gt;
-
-&lt;p&gt;이 리뷰는 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="아파치" /><category term="카프카" /><category term="한빛미디어" /><category term="인프라" /><category term="파이프라인" /><category term="구축" /><category term="시스템" /><category term="클라우드" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;마케터로서 AI를 활용해보고 싶거나, 개발자인데 마케팅에 관심이 있는 분이라면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B8503179529&quot;&gt;링크&lt;/a&gt; 를 확인해보시기 바랍니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="lean" /><category term="ai" /><category term="사용자유치" /><category term="그로스" /><category term="마케팅" /><category term="성장" /><category term="전략" /><category term="인공지능" /><category term="oreilly" /><summary type="html"></summary></entry></feed>
