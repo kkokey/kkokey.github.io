@@ -1,5 +1,5 @@
 ---
-title: '[도서리뷰] Building Machine Learning Powered Applications 머신러닝 파워드 애플리케이션'
+title: '[도서리뷰] Building Machine Learning Powered Applications - 머신러닝 파워드 애플리케이션'
 date: 2022-03-31 23:00:00
 categories: 도서리뷰
 tags: 개발자 developer 머신러닝 애플리케이션 
