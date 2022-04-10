@@ -4,4 +4,6 @@ https://kkokey.github.io
 
 $ bundle install
 
+$ bundle exec jekyll b
+
 $ bundle exec jekyll serve

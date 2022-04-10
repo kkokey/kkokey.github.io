@@ -1,7 +1,7 @@
 ---
 title: 'Android sign key 만드는 법'
 date: 2021-12-17 01:00:00
-categories: 도서리뷰
+categories: android
 tags: 개발자 developer android signkey keytool
 comments: true
 ---
