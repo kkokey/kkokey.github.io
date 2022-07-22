@@ -1,6 +1,6 @@
 ---
-title: '[도서리뷰] 이것이 안드로이드다'
-date: 2022-07-22 01:10:00
+title: '[도서리뷰] 이것이 안드로이드다 with 코틀린'
+date: 2022-07-22 00:11:00
 categories: 도서리뷰
 tags: Developer 안드로이드 자바 코틀린 android java kotlin youtube app moblie googleplay playstore 한빛미디어 고돈호
 comments: true
@@ -45,4 +45,3 @@ Flutter를 기본으로 만들고는 있지만 Java나 Kotlin을 사용해 안�
 
 이 리뷰 내용은 한빛미디어 &lt;나는 리뷰어다&gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.  
 책의 내용이 궁금하다면 [이곳](https://www.hanbit.co.kr/store/books/look.php?p_code=B8929106417)을 통해 확인할 수 있습니다.
-
