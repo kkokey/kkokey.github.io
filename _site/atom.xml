@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://kkokey.github.io//atom.xml" rel="self" type="application/atom+xml" /><link href="http://kkokey.github.io//" rel="alternate" type="text/html" /><updated>2022-07-23T01:38:58+09:00</updated><id>http://kkokey.github.io//atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 이것이 안드로이드다 with 코틀린</title><link href="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/07/22/this-is-android/" rel="alternate" type="text/html" title="[도서리뷰] 이것이 안드로이드다 with 코틀린" /><published>2022-07-22T09:11:00+09:00</published><updated>2022-07-22T09:11:00+09:00</updated><id>http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/07/22/this-is-android</id><content type="html" xml:base="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/07/22/this-is-android/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/this_is_android.jpg?alt=media&amp;amp;token=5201647c-156a-45d4-80ea-3f80227e0d2a&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://kkokey.github.io//atom.xml" rel="self" type="application/atom+xml" /><link href="http://kkokey.github.io//" rel="alternate" type="text/html" /><updated>2022-12-31T01:47:21+09:00</updated><id>http://kkokey.github.io//atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 데이터로 전문가처럼 말하기</title><link href="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/10/02/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%A0%84%EB%AC%B8%EA%B0%80%EC%B2%98%EB%9F%BC-%EB%A7%90%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="[도서리뷰] 데이터로 전문가처럼 말하기" /><published>2022-10-02T07:11:00+09:00</published><updated>2022-10-02T07:11:00+09:00</updated><id>http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/10/02/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%A0%84%EB%AC%B8%EA%B0%80%EC%B2%98%EB%9F%BC-%EB%A7%90%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/10/02/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%A0%84%EB%AC%B8%EA%B0%80%EC%B2%98%EB%9F%BC-%EB%A7%90%ED%95%98%EA%B8%B0/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/data_said.jpg?alt=media&amp;amp;token=44e36f2f-4ce3-41b4-bb30-2644e71a53e2&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
+
+&lt;p&gt;여러분은 데이터를 전달할 때 어떤 형태로 전달하시나요?
+데이터를 수집하고 관리하는 것도 중요하지만 일을 하면서 다른 사람과 데이터를 가지고 잘 소통하는 것도 참 중요합니다.&lt;/p&gt;
+
+&lt;p&gt;데이터를 어떻게 전달하느냐에 따라 굉장히 잘 기억에 남을 수도 있고 내가 전달하고자 하는 핵심적인 내용을 더 효과적으로 전달할 수 있게 되죠.&lt;/p&gt;
+
+&lt;p&gt;데이터를 잘 전달하는 방법중에 대표적인 것 중 하나가 바로 데이터 시각화 입니다.
+적절한 기준과 적절한 표현 방법을 사용하여 전달하면 지금 현재 상태와 앞으로 일어날 일들에 대해 꼼꼼하게 확인하고 체크할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;이 책에서는 데이터를 제대로 수집하는 방법에 대해 먼저 다룹니다.
+데이터라는 것은 상황과 형태에 따라 제대로 수집하는 방법이 달라지는데 그 부분에 대해서 친절하게 설명해 주고 있다는 생각이 들었습니다.&lt;/p&gt;
+
+&lt;p&gt;데이터를 제대로 수집 했다면 제대로 표현을 할 수 있어야겠죠.
+데이터의 표현 방법에 있어서는 정확성과 시인성 그리고 그 기준에 대해 다룹니다.
+어떤 데이터는 표로 정확한 수치를 표현하는 것이 좋거나 막대 그래프나 라인 그래프처럼 전체적인 양상이나 비교할 수 있도록 시각화된 데이터가 더 좋은 데이터들이 있는데 해당 내용들이 언제 필요하고 언제 필요 없는지에 대해 자세하게 설명 해줍니다.&lt;/p&gt;
+
+&lt;p&gt;그 외에도 데이터를 공유하는 대상에 따라 어떤 데이터를 어떤 형태로 보여주는 것이 효과적인 데이터 커뮤니케이션 방법인지 상세하게 기술하고 있어 데이터를 가지고 다른 사람과 소통해야 하는 분에게는 꽤 좋은 참고서가 될 것이라고 생각이 듭니다.&lt;/p&gt;
+
+&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B5424596013&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="Developer" /><category term="데이터" /><category term="말하기" /><category term="이한호" /><category term="칼올친" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 이것이 안드로이드다 with 코틀린</title><link href="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/07/22/this-is-android/" rel="alternate" type="text/html" title="[도서리뷰] 이것이 안드로이드다 with 코틀린" /><published>2022-07-22T09:11:00+09:00</published><updated>2022-07-22T09:11:00+09:00</updated><id>http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/07/22/this-is-android</id><content type="html" xml:base="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/07/22/this-is-android/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/this_is_android.jpg?alt=media&amp;amp;token=5201647c-156a-45d4-80ea-3f80227e0d2a&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
 
@@ -167,7 +189,22 @@ Flutter를 기본으로 만들고는 있지만 Java나 Kotlin을 사용해 안�
 정말 읽기 쉽고 이해하기 쉽게 쓰여 있어서 한번 읽고 나면 과거부터 현재까지의 인공지능을 빠르게 파악할 수 있으리라 생각합니다.&lt;/p&gt;
 
 &lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6700696024&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="software" /><category term="AI" /><category term="nft" /><category term="ai" /><category term="chip" /><category term="metaverse" /><category term="self-driving" /><category term="car" /><category term="장동인" /><category term="한빛미디어" /><category term="인간지능" /><category term="인공지능" /><category term="메타버스" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 아키텍처로 가는 길</title><link href="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect/" rel="alternate" type="text/html" title="[도서리뷰] 아키텍처로 가는 길" /><published>2021-12-25T10:00:00+09:00</published><updated>2021-12-25T10:00:00+09:00</updated><id>http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect</id><content type="html" xml:base="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_8843.JPG?alt=media&amp;amp;token=e22af8a9-f8e1-4b47-af7d-6d3ad2945777&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6700696024&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="software" /><category term="AI" /><category term="nft" /><category term="ai" /><category term="chip" /><category term="metaverse" /><category term="self-driving" /><category term="car" /><category term="장동인" /><category term="한빛미디어" /><category term="인간지능" /><category term="인공지능" /><category term="메타버스" /><summary type="html"></summary></entry><entry><title type="html">adb command</title><link href="http://kkokey.github.io//marketing/2021/12/25/adb-command/" rel="alternate" type="text/html" title="adb command" /><published>2021-12-25T10:00:00+09:00</published><updated>2021-12-25T10:00:00+09:00</updated><id>http://kkokey.github.io//marketing/2021/12/25/adb-command</id><content type="html" xml:base="http://kkokey.github.io//marketing/2021/12/25/adb-command/">&lt;p&gt;./adb -s R3CR90PZD8Y install /Users/aron/projects/NCTMarketing/eco-pedometer/build/app/outputs/flutter-apk/app-release.apk
+./adb -s ce03160390ae063203 install /Users/aron/projects/NCTMarketing/eco-pedometer/build/app/outputs/flutter-apk/app-release.apk&lt;/p&gt;
+
+&lt;p&gt;./adb -s R3CR90PZD8Y shell ps -ef | grep com.nct.eco
+./adb -s R3CR90PZD8Y shell logcat –pid=8050&lt;/p&gt;
+
+&lt;p&gt;./adb -s ce03160390ae063203 shell ps -ef | grep com.nct.eco
+./adb -s ce03160390ae063203 shell logcat –pid=10709&lt;/p&gt;
+
+&lt;p&gt;shell am broadcast -a com.android.vending.INSTALL_REFERRER -n com.nct.v/com.nct.v.InstallReferrer –es “referrer”–es “referrer” “utm_source=test_source&amp;amp;utm_medium=test_medium&amp;amp;utm_term=utm_test&amp;amp;utm_content=test_content&amp;amp;utm_campaign=test_name”&lt;/p&gt;
+
+&lt;p&gt;./adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n com.nct.v/com.nct.v.InstallReferrer –es “referrer”–es “referrer” “utm_source=test_source&amp;amp;utm_medium=test_medium&amp;amp;utm_term=utm_test&amp;amp;utm_content=test_content&amp;amp;utm_campaign=test_name”&lt;/p&gt;
+
+&lt;p&gt;adb shell am broadcast -a com.android.vending.INSTALL_REFERRER –es referrer hello&lt;/p&gt;
+
+&lt;p&gt;./adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n com.nct.v/.util.broadcast_receivers.FacadeBroadcastReceiver –es “referrer” “utm_source=test_source\&amp;amp;utm_medium=test_medium\&amp;amp;utm_term=test_term\&amp;amp;utm_content=test_content\&amp;amp;utm_campaign=test_name”&lt;/p&gt;</content><author><name>Aron</name></author><category term="Marketing" /><category term="adb" /><category term="command" /><category term="android" /><summary type="html">./adb -s R3CR90PZD8Y install /Users/aron/projects/NCTMarketing/eco-pedometer/build/app/outputs/flutter-apk/app-release.apk ./adb -s ce03160390ae063203 install /Users/aron/projects/NCTMarketing/eco-pedometer/build/app/outputs/flutter-apk/app-release.apk</summary></entry><entry><title type="html">[도서리뷰] 아키텍처로 가는 길</title><link href="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect/" rel="alternate" type="text/html" title="[도서리뷰] 아키텍처로 가는 길" /><published>2021-12-25T10:00:00+09:00</published><updated>2021-12-25T10:00:00+09:00</updated><id>http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect</id><content type="html" xml:base="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/12/25/to-archtect/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_8843.JPG?alt=media&amp;amp;token=e22af8a9-f8e1-4b47-af7d-6d3ad2945777&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.😎&lt;/p&gt;
 
@@ -198,49 +235,4 @@ Flutter를 기본으로 만들고는 있지만 Java나 Kotlin을 사용해 안�
 책에서 꽤 많은 부분을 차지하고 있으니 꼭 읽어보시길 바랍니다.&lt;/p&gt;
 
 &lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B1705050272&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="software" /><category term="design" /><category term="it" /><category term="from" /><category term="programmer" /><category term="to" /><category term="software" /><category term="architect" /><summary type="html"></summary></entry><entry><title type="html">Android sign key 만드는 법</title><link href="http://kkokey.github.io//android/2021/12/17/create-android-signing-key-by-keytools/" rel="alternate" type="text/html" title="Android sign key 만드는 법" /><published>2021-12-17T10:00:00+09:00</published><updated>2021-12-17T10:00:00+09:00</updated><id>http://kkokey.github.io//android/2021/12/17/create-android-signing-key-by-keytools</id><content type="html" xml:base="http://kkokey.github.io//android/2021/12/17/create-android-signing-key-by-keytools/">&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ keytool -genkey -v -keystore keystore -alias nct -keyalg RSA -keysize 2048 -validity 10000 -keypass password -storepass password -dname &quot;CN=nct, OU=team, O=product, L=SEOUL, S=SEOUL, C=ko&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;keypass와 storepass의 경우 동일한 값을 사용해야 한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;출력내용&quot;&gt;[출력내용]&lt;/h2&gt;
-&lt;pre&gt;
-키 저장소 비밀번호 입력:  
-새 비밀번호 다시 입력:  
-이름과 성을 입력하십시오.  
-  [Unknown]:  nct  
-조직 단위 이름을 입력하십시오.  
-  [Unknown]:  team  
-조직 이름을 입력하십시오.
-  [Unknown]:  product
-구/군/시 이름을 입력하십시오?
-  [Unknown]:  seoul
-시/도 이름을 입력하십시오.
-  [Unknown]:  seoul
-이 조직의 두 자리 국가 코드를 입력하십시오.
-  [Unknown]:  ko
-CN=nct, OU=team, O=product, L=seoul, ST=seoul, C=ko이(가) 맞습니까?
-  [아니오]:  y
-
-다음에 대해 유효 기간이 10,000일인 2,048비트 RSA 키 쌍 및 자체 서명된 인증서(SHA256withRSA)를 생성하는 중
-    : CN=nct, OU=team, O=product, L=seoul, ST=seoul, C=ko
-[nctBitStepKey을(를) 저장하는 중]
-
-&lt;/pre&gt;</content><author><name>Aron</name></author><category term="android" /><category term="개발자" /><category term="developer" /><category term="android" /><category term="signkey" /><category term="keytool" /><summary type="html">$ keytool -genkey -v -keystore keystore -alias nct -keyalg RSA -keysize 2048 -validity 10000 -keypass password -storepass password -dname &quot;CN=nct, OU=team, O=product, L=SEOUL, S=SEOUL, C=ko&quot;</summary></entry><entry><title type="html">[도서 리뷰] 구글 BERT의 정석</title><link href="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/11/22/%EA%B5%AC%EA%B8%80-bert%EC%9D%98-%EC%A0%95%EC%84%9D/" rel="alternate" type="text/html" title="[도서 리뷰] 구글 BERT의 정석" /><published>2021-11-22T07:00:00+09:00</published><updated>2021-11-22T07:00:00+09:00</updated><id>http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/11/22/%EA%B5%AC%EA%B8%80-bert%EC%9D%98-%EC%A0%95%EC%84%9D</id><content type="html" xml:base="http://kkokey.github.io//%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2021/11/22/%EA%B5%AC%EA%B8%80-bert%EC%9D%98-%EC%A0%95%EC%84%9D/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/google-bert.jpg?alt=media&amp;amp;token=b7bfc72d-c92d-48e8-a759-7e58f4d91aab&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다. 😎&lt;/p&gt;
-
-&lt;p&gt;인공지능을 공부하다 보면 자연어 처리에 대해 한번쯤 관심을 가지게 됩니다. 딥러닝을 이용한 자연어 처리에는 워드투벡터, 글로브가 많이 이용되는데 BERT 역시 이러한 임베딩 방법중 한가지이다.
-책에서는 BERT를 이해하기 위해서 필요한 내용 그리고 그 이전에 자연어 처리 모델에 대한 내용을 먼저 다루고 실질적인 BERT가 동작하는 방식을 다루며 독자가 좀 더 쉽게 이해할 수 있도록 했다.
-뮬론 기본적인 딥러닝의 개념에 대해서 모른다면 다른 딥러닝의 이해를 돕는 기본 책들을 먼저 찾아보고 읽어본 후에 이 책을 읽기를 권한다.
-이 책에서는 기본적으로 딥러닝이 어떤식으로 동작하는지에 대한 이해가 뒷받침 된 상태에서 읽는 것을 전제로 하고 있다.
-책의 초반에 대상독자에 대해서 소개하는데 이미 머신러닝 업무를 수행하고 있는 사람이나 BERT를 기반으로 NLP 업무를 하고자 하는 사람들이 적합하다고 서술하고 있다.&lt;/p&gt;
-
-&lt;p&gt;딥러닝에 대해 알지 못한다면 어려울 것으로 생각될만큼 일반적인 내용보다는 BERT를 동작 시키기 위해 필요하거나 좀 더 BERT에 대해 집중적으로 설명하고 있다.
-기본 이해가 있는 사람들에게는 BERT를 쓰기 위해 필요한 기본적인 내용과 활용할 수 있도록 충분한 내용을 다루고 있기에 BERT를 사용하여 NLP를 구축하는데는 많은 도움이 될꺼라 생각된다.
-추가적으로 한국어 언어 모델인 KoBERT, KoGPT2, KoBART에 대해서도 다루고 있어 단순히 BERT를 사용해 NLP 처리가 아니라 한국어 언어에 대한 처리를 하기 위해서도 도움이 될만한 부분이 책의 한 챕터로 구성되어 있다.&lt;/p&gt;
-
-&lt;p&gt;구글 BERT 외에도 다른 자연어 처리 모델도 있는데 앞으로도 계속 발전해 나가는 영역인 만큼 NLP 처리 모델 중 한가지인 BERT도 한번 살펴보면 좋겠다는 생각이 든다.&lt;/p&gt;
-
-&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B2201215526&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="neural" /><category term="natural" /><category term="language" /><category term="processing" /><category term="google" /><category term="bert" /><category term="deep" /><category term="learning" /><summary type="html"></summary></entry></feed>
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B1705050272&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="software" /><category term="design" /><category term="it" /><category term="from" /><category term="programmer" /><category term="to" /><category term="software" /><category term="architect" /><summary type="html"></summary></entry></feed>
