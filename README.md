@@ -2,8 +2,8 @@ https://kkokey.github.io
 
 ### How to install bundle and run local server
 
-$ bundle install
+$ arch -arm64 bundle install
 
-$ bundle exec jekyll b
+$ arch -arm64 bundle exec jekyll b
 
-$ bundle exec jekyll serve
+$ arch -arm64 bundle exec jekyll serve

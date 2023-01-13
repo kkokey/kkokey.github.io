@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-31T02:04:52+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 핸즈온 데이터 시각화</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/12/30/Hands-on/" rel="alternate" type="text/html" title="[도서리뷰] 핸즈온 데이터 시각화" /><published>2022-12-30T10:10:00+09:00</published><updated>2022-12-30T10:10:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/12/30/Hands-on</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/12/30/Hands-on/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-12-31%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.22.55.png?alt=media&amp;amp;token=ff718f9f-0a0f-433c-99e0-c73d7fbf9bed&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-13T13:42:05+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 핸즈온 데이터 시각화</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/12/31/Hands-on-daya-visualization/" rel="alternate" type="text/html" title="[도서리뷰] 핸즈온 데이터 시각화" /><published>2022-12-31T08:59:00+09:00</published><updated>2022-12-31T08:59:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/12/31/Hands-on-daya-visualization</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/12/31/Hands-on-daya-visualization/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-12-31%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.22.55.png?alt=media&amp;amp;token=ff718f9f-0a0f-433c-99e0-c73d7fbf9bed&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
+
+&lt;p&gt;요즘은 많은 영역에서 데이터 시각화를 다루고 있어 많은 직군에서 활용하는 것 같습니다.&lt;/p&gt;
+
+&lt;p&gt;여러분은 데이터 시각화 하면 어떤 이유로 만들려고 하시나요?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;내부 사업팀의 설득을 위해?&lt;/li&gt;
+  &lt;li&gt;성과 공유를 위한 자료를 위해?&lt;/li&gt;
+  &lt;li&gt;데이터의 현재 상태에 대한 공유?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;사실 무엇이 되었든 데이터를 제대로 정리하는게 중요하고 무엇을 보여줄 것인지 기준점을 잡는 것이 중요할 것입니다.&lt;/p&gt;
+
+&lt;p&gt;때에 따라서는 효과적인 툴을 사용해 적은 노력으로도 큰 효과를 낼 수 있도록 하는 것도 중요할 것입니다.&lt;/p&gt;
+
+&lt;p&gt;그런면에서 이책 핸드온 데이터 시각화는 높은 활용도를 가진 스킬들을 제안합니다.&lt;/p&gt;
+
+&lt;p&gt;데이터를 다루는데 정말 기초적이고 절대 빠질 수 없는 툴인 스프레드 시트를 처음 소개 하고 있다는 점에서 저는 제대로 현업에서 쓸 수 있게 소개하고 있다는 생각이 들었습니다.&lt;/p&gt;
+
+&lt;p&gt;제 주변에더 데이터를 정말 기가 막히게 정리하시는 분이 계시는데 그분은 거의 모든 것을 스프레드 시트 하나로 정리합니다.&lt;/p&gt;
+
+&lt;p&gt;아주 가끔 차트가 필요한 경우에만 다른 툴을 활용해 차트를 만들어내죠.&lt;/p&gt;
+
+&lt;p&gt;그만큼 활용도가 높은 툴이라고 평소에도 생각을 가지고 있었는데 이렇게 책에서 소개하는 내용을 보니 더욱더 신뢰감이 생겼습니다.&lt;/p&gt;
+
+&lt;p&gt;그 이후에는 데이터를 정리하는 방식 데이터를 풀어서 설명하는 방식 - 일종의 스토리웨이죠.
+그리고 풀어낸 데이터를 가지고 차트나 도구들을 활용해 한눈에 볼 수 있도록 하는 것.&lt;/p&gt;
+
+&lt;p&gt;거기에 더해서 코드 템플릿까지 제공하고 있어 평소에 생각하고 있는 데이터 시각화에 필요한 많은 것들을 제공해주고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;만약 데이터 시각화를 어떻게 하는지 잘 모르겠다거나 하기는 해야 하는데 해본적이 없어 너무 어렵다면 이 책이 도움이 될꺼라 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B1996635146&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="Developer" /><category term="데이터시각화" /><category term="김태헌" /><category term="잭" /><category term="도허티" /><category term="일리야" /><category term="일라얀코우" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 핸즈온 데이터 시각화</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/12/30/Hands-on/" rel="alternate" type="text/html" title="[도서리뷰] 핸즈온 데이터 시각화" /><published>2022-12-30T10:10:00+09:00</published><updated>2022-12-30T10:10:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/12/30/Hands-on</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/12/30/Hands-on/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-12-31%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.22.55.png?alt=media&amp;amp;token=ff718f9f-0a0f-433c-99e0-c73d7fbf9bed&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
 
@@ -222,19 +257,4 @@ Flutter를 기본으로 만들고는 있지만 Java나 Kotlin을 사용해 안�
 정말 읽기 쉽고 이해하기 쉽게 쓰여 있어서 한번 읽고 나면 과거부터 현재까지의 인공지능을 빠르게 파악할 수 있으리라 생각합니다.&lt;/p&gt;
 
 &lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6700696024&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="software" /><category term="AI" /><category term="nft" /><category term="ai" /><category term="chip" /><category term="metaverse" /><category term="self-driving" /><category term="car" /><category term="장동인" /><category term="한빛미디어" /><category term="인간지능" /><category term="인공지능" /><category term="메타버스" /><summary type="html"></summary></entry><entry><title type="html">adb command</title><link href="http://localhost:4000/marketing/2021/12/25/adb-command/" rel="alternate" type="text/html" title="adb command" /><published>2021-12-25T10:00:00+09:00</published><updated>2021-12-25T10:00:00+09:00</updated><id>http://localhost:4000/marketing/2021/12/25/adb-command</id><content type="html" xml:base="http://localhost:4000/marketing/2021/12/25/adb-command/">&lt;p&gt;./adb -s R3CR90PZD8Y install /Users/aron/projects/NCTMarketing/eco-pedometer/build/app/outputs/flutter-apk/app-release.apk
-./adb -s ce03160390ae063203 install /Users/aron/projects/NCTMarketing/eco-pedometer/build/app/outputs/flutter-apk/app-release.apk&lt;/p&gt;
-
-&lt;p&gt;./adb -s R3CR90PZD8Y shell ps -ef | grep com.nct.eco
-./adb -s R3CR90PZD8Y shell logcat –pid=8050&lt;/p&gt;
-
-&lt;p&gt;./adb -s ce03160390ae063203 shell ps -ef | grep com.nct.eco
-./adb -s ce03160390ae063203 shell logcat –pid=10709&lt;/p&gt;
-
-&lt;p&gt;shell am broadcast -a com.android.vending.INSTALL_REFERRER -n com.nct.v/com.nct.v.InstallReferrer –es “referrer”–es “referrer” “utm_source=test_source&amp;amp;utm_medium=test_medium&amp;amp;utm_term=utm_test&amp;amp;utm_content=test_content&amp;amp;utm_campaign=test_name”&lt;/p&gt;
-
-&lt;p&gt;./adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n com.nct.v/com.nct.v.InstallReferrer –es “referrer”–es “referrer” “utm_source=test_source&amp;amp;utm_medium=test_medium&amp;amp;utm_term=utm_test&amp;amp;utm_content=test_content&amp;amp;utm_campaign=test_name”&lt;/p&gt;
-
-&lt;p&gt;adb shell am broadcast -a com.android.vending.INSTALL_REFERRER –es referrer hello&lt;/p&gt;
-
-&lt;p&gt;./adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n com.nct.v/.util.broadcast_receivers.FacadeBroadcastReceiver –es “referrer” “utm_source=test_source\&amp;amp;utm_medium=test_medium\&amp;amp;utm_term=test_term\&amp;amp;utm_content=test_content\&amp;amp;utm_campaign=test_name”&lt;/p&gt;</content><author><name>Aron</name></author><category term="Marketing" /><category term="adb" /><category term="command" /><category term="android" /><summary type="html">./adb -s R3CR90PZD8Y install /Users/aron/projects/NCTMarketing/eco-pedometer/build/app/outputs/flutter-apk/app-release.apk ./adb -s ce03160390ae063203 install /Users/aron/projects/NCTMarketing/eco-pedometer/build/app/outputs/flutter-apk/app-release.apk</summary></entry></feed>
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6700696024&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="software" /><category term="AI" /><category term="nft" /><category term="ai" /><category term="chip" /><category term="metaverse" /><category term="self-driving" /><category term="car" /><category term="장동인" /><category term="한빛미디어" /><category term="인간지능" /><category term="인공지능" /><category term="메타버스" /><summary type="html"></summary></entry></feed>
