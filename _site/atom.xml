@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-26T21:11:44+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 디지털 비주얼 씽킹</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/02/26/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B9%84%EC%A3%BC%EC%96%BC-%EC%94%BD%ED%82%B9/" rel="alternate" type="text/html" title="[도서리뷰] 디지털 비주얼 씽킹" /><published>2023-02-26T05:04:00+09:00</published><updated>2023-02-26T05:04:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/02/26/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B9%84%EC%A3%BC%EC%96%BC-%EC%94%BD%ED%82%B9</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/02/26/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B9%84%EC%A3%BC%EC%96%BC-%EC%94%BD%ED%82%B9/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/visual_thinking.png?alt=media&amp;amp;token=4946b8ed-ba06-4fa2-8223-ae17817e6d08&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-26T22:55:50+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 트랜스포머를 활용한 자연어 처리</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/03/26/Natural/" rel="alternate" type="text/html" title="[도서리뷰] 트랜스포머를 활용한 자연어 처리" /><published>2023-03-26T05:04:00+09:00</published><updated>2023-03-26T05:04:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/03/26/Natural</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/03/26/Natural/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_1496.jpg?alt=media&amp;amp;token=ba7ba6cb-a2a9-46af-8ca9-0e19da7c9836&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
+
+&lt;p&gt;혹시 여러분은 ChatGPT에 대해 얼마나 알고 계신가요?
+openai에서 만들었고 그냥 채팅 봇정도로만 알고 계신가요?&lt;/p&gt;
+
+&lt;p&gt;ChatGPT는 산업 전반에 걸쳐서 변화를 만들어내고 있습니다.
+인공지능이 하기 어려울 것이라는 창작이라는 영역이 가장 먼저 점령되고 점점 유저에게 친숙한 서비스들이 나오면서 과연 생성형 인공지능이 어느정도까지 가능할까 하는 생각마저 들게 됩니다.&lt;/p&gt;
+
+&lt;p&gt;ChatGPT는 생성형 AI라고 불리우고 있습니다.
+그 이유는 ChatGPT에서 Chat을 제외한 GPT가 Generative Pre-trained Transformer의 약자이기 때문입니다.&lt;/p&gt;
+
+&lt;p&gt;이것이 의미하는 바는 말 그대로 사전에 훈련된 생성 변환기입니다.
+사전에 훈련된 내용으로 생성하고 변환하는 신경망 학습모델인 것이죠. 그리고 채팅으로 대화를 하기 때문에 Chat이 붙은 것이죠.&lt;/p&gt;
+
+&lt;p&gt;이 ChatGPT를 이해 하려면 Transformer를 이해하면 된다는 말입니다. 심지어 내가 ChatGPT 같은 것을 만들 수 있기도 합니다.&lt;/p&gt;
+
+&lt;p&gt;다만 오랜 훈련의 시간과 엄청난 컴퓨팅 자원이 소모될 뿐이죠.&lt;/p&gt;
+
+&lt;p&gt;당장 내가 ChatGPT를 만들지 못한다고 해도 이 GPT를 이해하면 앞으로의 삶에 도움이 될것이 분명합니다.&lt;/p&gt;
+
+&lt;p&gt;이 책 트렌스포머를 활용한 자연어 처리에서는 트랜스포머를 이해하는 것부터 시작해서 텍스트를 처리하는 방법, 효율적으로 트랜스포머를 구축하고 텍스트를 생성하여 ChatGPT처럼 만드는 방법들을 알려주고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;요즘 이슈가 되고 많은 기업에서 활용하고 있는 ChatGPT를 더 잘 이해하고 활용하고 싶거나 ChatGPT 같은 트랜포머를 활용한 생성형 AI를 만들어보고 싶다면 이 책을 한번 읽어보는 것을 추천드립니다.&lt;/p&gt;
+
+&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B2369016915&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="박해선" /><category term="루이스" /><category term="턴스롤" /><category term="레안드로" /><category term="폰" /><category term="베라" /><category term="토마스" /><category term="울프" /><category term="NLP" /><category term="자연어" /><category term="처리" /><category term="오라일리" /><category term="한빛미디어" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 디지털 비주얼 씽킹</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/02/26/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B9%84%EC%A3%BC%EC%96%BC-%EC%94%BD%ED%82%B9/" rel="alternate" type="text/html" title="[도서리뷰] 디지털 비주얼 씽킹" /><published>2023-02-26T05:04:00+09:00</published><updated>2023-02-26T05:04:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/02/26/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B9%84%EC%A3%BC%EC%96%BC-%EC%94%BD%ED%82%B9</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/02/26/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B9%84%EC%A3%BC%EC%96%BC-%EC%94%BD%ED%82%B9/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/visual_thinking.png?alt=media&amp;amp;token=4946b8ed-ba06-4fa2-8223-ae17817e6d08&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
 
@@ -225,31 +252,4 @@ Flutter를 기본으로 만들고는 있지만 Java나 Kotlin을 사용해 안�
 &lt;p&gt;더구나 요즘은 클라우드 서비스에서 충분히 머신러닝을 돌려볼 수 있기 때문에 모델을 알게 되고 데이터셋을 정리해서 계획을 세우고 배포를 하는 것을 더 쉽게 잘 할 수 있게 됩니다.&lt;/p&gt;
 
 &lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B8274600462&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="머신러닝" /><category term="애플리케이션" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] AI로 일하는 기술 - 인공지능은 어떻게 일이 되는가</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/02/23/AI%EB%A1%9C-%EC%9D%BC%ED%95%98%EB%8A%94-%EA%B8%B0%EC%88%A0/" rel="alternate" type="text/html" title="[도서리뷰] AI로 일하는 기술 - 인공지능은 어떻게 일이 되는가" /><published>2022-02-23T20:00:00+09:00</published><updated>2022-02-23T20:00:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/02/23/AI%EB%A1%9C-%EC%9D%BC%ED%95%98%EB%8A%94-%EA%B8%B0%EC%88%A0</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/02/23/AI%EB%A1%9C-%EC%9D%BC%ED%95%98%EB%8A%94-%EA%B8%B0%EC%88%A0/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/AI.jpg?alt=media&amp;amp;token=3d771207-24f3-4ce6-8660-d01dbbfe769a&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.😎&lt;/p&gt;
-
-&lt;p&gt;AI는 공부할 때마다 그리고 내용을 들을 때마다 참 어렵다는 생각을 많이 하게 됩니다.
-그 이유중 하나가 사람들이 하는 질문에 선뜻 대답해주기가 어렵기 때문이라고 생각합니다.&lt;/p&gt;
-
-&lt;p&gt;AI 전문가를 데려다 놓고 질문을 해봐도 속시원하게 대답해주지 못하는 것 같아요.
-그만큼 기술의 난이도도 높고 복잡한 내용이 함께 고려되어야 하기 때문이 아닐까 생각되네요.
-그런면에서 이책은 참 재미있는 포인트가 있었습니다.&lt;/p&gt;
-
-&lt;p&gt;바로 목차가 질문이라는 점입니다. 아무래도 그 동안 여러 매체에서 AI가 미래산업이다 핵심산업이다 해서 얘기는 많지만 제대로된 질문과 답변을 들을 수 없기 때문에 작가분이 선택한 방식이 아닐까 하는 생각이 드네요.
-더해서 작가분이 차분하게 설명이라도 하는 듯한 느낌의 문장체도 한몱하는 것 같구요.&lt;/p&gt;
-
-&lt;p&gt;정말 친절하게도 “인공지능이 뭔가요?”부터 일반인공지능, 인공지능과 관련된 직업, 현재까지의 인공지능이 할 수 있는 것들, 산업에서 쓰이는 인공지능 마지막으로 인공지능을 통해 우리의 미래를 보고 어떤 관점에서 인공지능을 보는지 나누어 인공지능과 관련되 전반적인 내용에 대해 쉽게 이해할 수 있는 내용들로 되어 있습니다.&lt;/p&gt;
-
-&lt;p&gt;당연한 얘기겠지만 제목만 단순히 질문으로 적은것이 아닌 그에 맞는 적절한 답변도 함께 제공됩니다.
-친절한건 덤이고 일반인이 이해하기에 어렵지 않은 내용으로 쭉쭉 읽히는것은 덤입니다.&lt;/p&gt;
-
-&lt;p&gt;만약 인공지능의 1도 모르는데 인공지능으로 뭔가 해야 한다면?
-인공지능을 빠르게 이해하고 인공지능의 현 주소를 알고 싶다면?
-인공지능이 미래에는 어떤식으로 활용될지 가볍게 감이라도 잡고 싶다면?&lt;/p&gt;
-
-&lt;p&gt;이 책을 적극 추천드리고 싶습니다.
-정말 읽기 쉽고 이해하기 쉽게 쓰여 있어서 한번 읽고 나면 과거부터 현재까지의 인공지능을 빠르게 파악할 수 있으리라 생각합니다.&lt;/p&gt;
-
-&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6700696024&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="software" /><category term="AI" /><category term="nft" /><category term="ai" /><category term="chip" /><category term="metaverse" /><category term="self-driving" /><category term="car" /><category term="장동인" /><category term="한빛미디어" /><category term="인간지능" /><category term="인공지능" /><category term="메타버스" /><summary type="html"></summary></entry></feed>
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B8274600462&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="머신러닝" /><category term="애플리케이션" /><summary type="html"></summary></entry></feed>
