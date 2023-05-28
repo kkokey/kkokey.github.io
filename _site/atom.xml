@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-26T22:55:50+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 트랜스포머를 활용한 자연어 처리</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/03/26/Natural/" rel="alternate" type="text/html" title="[도서리뷰] 트랜스포머를 활용한 자연어 처리" /><published>2023-03-26T05:04:00+09:00</published><updated>2023-03-26T05:04:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/03/26/Natural</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/03/26/Natural/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_1496.jpg?alt=media&amp;amp;token=ba7ba6cb-a2a9-46af-8ca9-0e19da7c9836&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-29T01:31:55+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] AWS 기반 데이터 과학, 엔드투엔드, AI/ML 파이프라인 구현하기</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/05/28/AWS/" rel="alternate" type="text/html" title="[도서리뷰] AWS 기반 데이터 과학, 엔드투엔드, AI/ML 파이프라인 구현하기" /><published>2023-05-28T08:58:00+09:00</published><updated>2023-05-28T08:58:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/05/28/AWS</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/05/28/AWS/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/aws.png?alt=media&amp;amp;token=fd906b31-18c3-4f0d-9a9f-f029594aa2dc&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
+
+&lt;p&gt;혹시 여러분은 인공지능을 구현하는 방법에 있어서 얼마나 알고 계신가요?&lt;/p&gt;
+
+&lt;p&gt;인공지능을 구현하는 방법은 여러가지가 있습니다.
+구현이 아니라 이미 만들어진 ChatGPT나 Bard 등의 이미 구현된 인공지능을 사용하는 방법도 있고, 직접 인공지능을 구현하는 방법도 있습니다.&lt;/p&gt;
+
+&lt;p&gt;다만 구현하기가 굉장히 어려운 부분이 있어서 보통은 구현되어 있는 인공지능의 API를 사용하는 경우가 많습니다.
+하지만 어쩔 수 없는 상황에선 이미 구현해놓은 것이 아닌 새롭게 구현해야 하는 경우가 있을 것입니다.&lt;/p&gt;
+
+&lt;p&gt;이런 경우에는 어떻게 해야 할까요?
+요즘은 인프라 서비스에서 많은 경우 머신러닝을 하기 위한 서비스를 제공하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;그 중에 하나가 바로 AWS 입니다.
+사실 머신러닝과 관련해서 특히 생성형 인공지능과 관련해서 가장 쉽게 구현할 수 있는 곳은 MS에서 제공하는 인프라 서비스인 Azure 입니다.
+하지만 원론적으로 머신러닝을 구현하는 방식을 생각하고 있다면 각 인프라 서비스들 마다 장단점이 있겠지만 AWS도 활용하기에 훌륭한 서비스라고 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;만약에 AWS를 생각하고 머신러닝을 구현하고자 한다면 이 책을 추천합니다.
+이 책은 데이터 수집, 전처리, 저장, 분석, 시각화 및 기계 학습 모델 구축 등 데이터 과학 프로젝트의 주요 단계를 AWS 서비스와 함께 수행하는 방법을 다룹니다. 예를 들어, Amazon S3를 사용하여 데이터를 저장하고 Amazon Redshift 또는 Amazon Athena를 사용하여 데이터를 쿼리하고 분석할 수 있습니다. 또한, Amazon SageMaker를 사용하여 기계 학습 모델을 구축하고 배포할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;이 책은 데이터 과학 프로젝트를 위한 AWS 서비스를 사용하는 방법을 설명합니다. 이 책을 통해 데이터 과학 프로젝트를 위한 AWS 서비스를 사용하는 방법을 배울 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6134249359&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="AWS" /><category term="서진호" /><category term="최미영" /><category term="크리스" /><category term="프레슬리" /><category term="안티" /><category term="바르트" /><category term="오라일리" /><category term="한빛미디어" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 트랜스포머를 활용한 자연어 처리</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/03/26/Natural/" rel="alternate" type="text/html" title="[도서리뷰] 트랜스포머를 활용한 자연어 처리" /><published>2023-03-26T05:04:00+09:00</published><updated>2023-03-26T05:04:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/03/26/Natural</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/03/26/Natural/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_1496.jpg?alt=media&amp;amp;token=ba7ba6cb-a2a9-46af-8ca9-0e19da7c9836&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
 
@@ -234,22 +259,4 @@ Flutter를 기본으로 만들고는 있지만 Java나 Kotlin을 사용해 안�
 &lt;p&gt;무턱대고 디자인 패턴이 좋으니까 적용하자! 또는 사용할 곳이 명확하지도 않은데 이걸 사용해야 해! 같은 것은 하지 않았으면 하는 바램입니다.&lt;/p&gt;
 
 &lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6113501223&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="헤드퍼스트" /><category term="O'REILLY" /><category term="개발자" /><category term="developer" /><category term="기초" /><category term="자바" /><category term="디자인패턴" /><category term="GOF" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] Building Machine Learning Powered Applications - 머신러닝 파워드 애플리케이션</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/03/31/bmlpa/" rel="alternate" type="text/html" title="[도서리뷰] Building Machine Learning Powered Applications - 머신러닝 파워드 애플리케이션" /><published>2022-03-31T21:00:00+09:00</published><updated>2022-03-31T21:00:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/03/31/bmlpa</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/03/31/bmlpa/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/IMG_9349.jpg?alt=media&amp;amp;token=21c59f10-770e-4f46-8882-f88758468883&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
-
-&lt;p&gt;여러분은 머신러닝을 얼마나 활용해 보셨나요?
-저는 항상 머신러닝에 대해서 얘기를 하다보면 지식의 한계 지점을 느낍니다.
-그만큼 제가 머신러닝에 대해 모르기도 하고 어떤식으로 머신러닝을 구상해야 할지 어렵기 때문일 겁니다.&lt;/p&gt;
-
-&lt;p&gt;머신러닝을 제대로 돌리기 위해서는 모델을 알아야 하고 그것을 또 배우는데 시간이 필요하고 그것을 잘 알지 못하면 또 머신러닝을 실행하지 못해서 어려운 것도 있습니다.&lt;/p&gt;
-
-&lt;p&gt;그런면에서 이 책에선 그런 모델을 먼저 가르쳐줍니다. 모델을 알고 나면 머신러닝을 설계하고 계획하고 수립해서 실제로 해볼 수 있습니다.&lt;/p&gt;
-
-&lt;p&gt;한걸음 나아가는 셈이죠.
-전반적으로 머신러닝에 필요한 부분들을 계획하고 실제로 돌려볼 수 있도록 가이드가 되어 있습니다.&lt;/p&gt;
-
-&lt;p&gt;더구나 요즘은 클라우드 서비스에서 충분히 머신러닝을 돌려볼 수 있기 때문에 모델을 알게 되고 데이터셋을 정리해서 계획을 세우고 배포를 하는 것을 더 쉽게 잘 할 수 있게 됩니다.&lt;/p&gt;
-
-&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B8274600462&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="개발자" /><category term="developer" /><category term="머신러닝" /><category term="애플리케이션" /><summary type="html"></summary></entry></feed>
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6113501223&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="헤드퍼스트" /><category term="O'REILLY" /><category term="개발자" /><category term="developer" /><category term="기초" /><category term="자바" /><category term="디자인패턴" /><category term="GOF" /><summary type="html"></summary></entry></feed>
