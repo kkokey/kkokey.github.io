@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-29T01:31:55+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] AWS 기반 데이터 과학, 엔드투엔드, AI/ML 파이프라인 구현하기</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/05/28/AWS/" rel="alternate" type="text/html" title="[도서리뷰] AWS 기반 데이터 과학, 엔드투엔드, AI/ML 파이프라인 구현하기" /><published>2023-05-28T08:58:00+09:00</published><updated>2023-05-28T08:58:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/05/28/AWS</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/05/28/AWS/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/aws.png?alt=media&amp;amp;token=fd906b31-18c3-4f0d-9a9f-f029594aa2dc&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-02T00:51:03+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 복붙 개발자의 벼락 성공기</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/07/01/%EB%B3%B5%EB%B6%99%EA%B0%9C%EB%B0%9C%EC%9E%90/" rel="alternate" type="text/html" title="[도서리뷰] 복붙 개발자의 벼락 성공기" /><published>2023-07-01T08:58:00+09:00</published><updated>2023-07-01T08:58:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/07/01/%EB%B3%B5%EB%B6%99%EA%B0%9C%EB%B0%9C%EC%9E%90</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/07/01/%EB%B3%B5%EB%B6%99%EA%B0%9C%EB%B0%9C%EC%9E%90/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/developer_success.png?alt=media&amp;amp;token=e39cbe35-c374-417e-8014-3aae6bad7105&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
+
+&lt;p&gt;개발자가 어떤 일상을 보내는지 궁금하신분이 있을까요?
+아주 사실적이지는 않지만 개발자가 무엇과 싸우고 무엇을 꿈꾸는지 알 수 있는 책이 있습니다.
+바로 이 벼락 성공기 책이죠.&lt;/p&gt;
+
+&lt;p&gt;종종 개발자 유머라고 해서 돌아다니는 짤들이 많이 있습니다.
+개발자가 기획자, 의사결정자와 회의를 하면서 말도 안되는 요구사항을 받아 이러지도 저러지도 못하는 모습을 보여주는 그런 짤들이죠.&lt;/p&gt;
+
+&lt;p&gt;그런 예시로 7개의 빨간선을 그려야 하는 영상(https://youtu.be/BKorP55Aqvg)이 있습니다.&lt;/p&gt;
+
+&lt;p&gt;물론 이것도 유머 영상이지만 이런 상황이 아주 비현실적이지는 않아서 웃픈 상황이랍니다.&lt;/p&gt;
+
+&lt;p&gt;이 책에는 이런 유머러스한 내용들이 꽤 많습니다. 
+그런의미로 이 책이 즐겁지 않으면 어쩌면 당신은 개발자가 아닐 수 있겠군요.&lt;/p&gt;
+
+&lt;p&gt;개발자라면 즐겁게 읽을 수 있으리라 확신합니다.ㅎ
+개발자가 되길 원한다면 이 책을 통해 개발자가 어떤 문제에 직면하고 어떤 고민을 하는지 알 수 있을거에요.&lt;/p&gt;
+
+&lt;p&gt;그리고 어쩌면 개발자를 꿈 꾸고 있는 사람에게 도움이 될지 모르겠습니다.ㅎ&lt;/p&gt;
+
+&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6457133957&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="복붙개발자의벼락성공기" /><category term="리오" /><category term="아이리스" /><category term="클라슨" /><category term="이미령" /><category term="김태곤" /><category term="한빛미디어" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] AWS 기반 데이터 과학, 엔드투엔드, AI/ML 파이프라인 구현하기</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/05/28/AWS/" rel="alternate" type="text/html" title="[도서리뷰] AWS 기반 데이터 과학, 엔드투엔드, AI/ML 파이프라인 구현하기" /><published>2023-05-28T08:58:00+09:00</published><updated>2023-05-28T08:58:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/05/28/AWS</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/05/28/AWS/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/aws.png?alt=media&amp;amp;token=fd906b31-18c3-4f0d-9a9f-f029594aa2dc&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
 
@@ -222,41 +246,4 @@ Flutter를 기본으로 만들고는 있지만 Java나 Kotlin을 사용해 안�
 &lt;p&gt;데이터 익명화를 위한 전략 또는 방법론에 대해 궁금하다면 거의 유일무이한 이 책을 활용해봐도 괜찮을 듯 하다.&lt;/p&gt;
 
 &lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B7550382130&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="데이터익명화" /><category term="O'REILLY" /><category term="파이프라인" /><category term="building" /><category term="anonymization" /><category term="pipeline" /><category term="이창현" /><category term="한빛미디어" /><category term="개인정보" /><category term="보안" /><category term="식별화" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 헤드퍼스트 디자인패턴</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/04/24/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" rel="alternate" type="text/html" title="[도서리뷰] 헤드퍼스트 디자인패턴" /><published>2022-04-24T20:00:00+09:00</published><updated>2022-04-24T20:00:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/04/24/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/04/24/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/designpattern.jpg?alt=media&amp;amp;token=6985d075-b546-416a-8e3c-185e2d9847bb&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
-
-&lt;p&gt;오늘은 아는 사람은 다 아는 디자인패턴에 대해 얘기를 조금 해볼까 합니다.&lt;/p&gt;
-
-&lt;p&gt;헤드퍼스트 디자인패턴은 굉장히 오래된 책입니다.
-한국어로 번역된 초판이 무려 2005년에 나왔으니까 한국어로 번역된 책이 나온지도 20년이 넘은셈이죠.&lt;/p&gt;
-
-&lt;p&gt;이 책은 일반적인 개발 서적과 조금 다릅니다. 
-코드만 나오는 것도 아니고, 그렇다고 줄글로만 주구장창 쓰여져 있지도 않지요. 
-이 때문에 책을 읽으면서 여행하는 느낌이 나기도 합니다.&lt;/p&gt;
-
-&lt;p&gt;책에는 총 16가지의 패턴을 다루게 됩니다.
-물론 여러 패턴들 얘기하기 전에 예제를 통해 전체적인 패턴을 사용하는 방식에 대해 얘기합니다.&lt;/p&gt;
-
-&lt;p&gt;옵저버, 데코레이터, 팩토리, 싱글턴, 커맨드, 어댑터, 퍼사드, 템플랫 메소드, 반복자, 컴포지트, 상태, 프록시 등의 패턴을 얘기해봅니다.
-물론 이 모든 패턴에 대해 익숙해지면 좋겠지만 모든 것이 그렇듯 필요할 때 적재 적소에 쓰는 것이 중요합니다.&lt;/p&gt;
-
-&lt;p&gt;중요도에 따라 더 많이 쓰이는 패턴이 있기도 하고 상대적으로 덜 사용되는 패턴도 있지요.
-저는 오히려 이 책에서 얘기하는 내용 중에는 패턴도 중요하지만 유연하게 개발하는 것에 대해 생각할 수 있도록 얘기하는 것도 정말 중요하다고 생각합니다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;디자인 패턴은 만병통치약이 아닙니다.&lt;/li&gt;
-  &lt;li&gt;패턴이 정말 필요한가?&lt;/li&gt;
-  &lt;li&gt;무조건 패턴을 적용해야 하는가?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;등의 질문을 통해 패턴을 적용하는 것에 대해 생각해보게 되는 것.
-이 패턴이 정말 필요한 것인가? 같은 생각들을 하는 것을 통해 점점 더 나은 개발을 해야 하는 것이죠.&lt;/p&gt;
-
-&lt;p&gt;디자인패턴이라는 것은 선배 개발자들의 경험과 노하우를 녹인 일종의 전래동화 같은 것이라고 생각합니다.
-그러한 이유로 경험을 공부하고 학습하면서 왜 이런 패턴이 나오게 되었는지 확인하고 그 상황이 되었을 때 내가 더 자연스럽게 비슷한 형태의 패턴을 사용한다면 디자인 패턴에 대해 제대로된 학습을 했다고 생각이 들 것 같습니다.&lt;/p&gt;
-
-&lt;p&gt;무턱대고 디자인 패턴이 좋으니까 적용하자! 또는 사용할 곳이 명확하지도 않은데 이걸 사용해야 해! 같은 것은 하지 않았으면 하는 바램입니다.&lt;/p&gt;
-
-&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B6113501223&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="헤드퍼스트" /><category term="O'REILLY" /><category term="개발자" /><category term="developer" /><category term="기초" /><category term="자바" /><category term="디자인패턴" /><category term="GOF" /><summary type="html"></summary></entry></feed>
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B7550382130&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="데이터익명화" /><category term="O'REILLY" /><category term="파이프라인" /><category term="building" /><category term="anonymization" /><category term="pipeline" /><category term="이창현" /><category term="한빛미디어" /><category term="개인정보" /><category term="보안" /><category term="식별화" /><summary type="html"></summary></entry></feed>
