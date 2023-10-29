@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-09-24T00:40:09+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 사라진 개발자들</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/09/23/%EC%82%AC%EB%9D%BC%EC%A7%84%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4/" rel="alternate" type="text/html" title="[도서리뷰] 사라진 개발자들" /><published>2023-09-23T20:13:00+09:00</published><updated>2023-09-23T20:13:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/09/23/%EC%82%AC%EB%9D%BC%EC%A7%84%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/09/23/%EC%82%AC%EB%9D%BC%EC%A7%84%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-09-24%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.14.38.png?alt=media&amp;amp;token=89dff8f0-98df-4cf3-951e-5b2e946fedd5&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-29T23:53:12+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 초보자도 프로처럼 만드는 플러터 앱 개발</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/10/28/flutter/" rel="alternate" type="text/html" title="[도서리뷰] 초보자도 프로처럼 만드는 플러터 앱 개발" /><published>2023-10-28T20:13:00+09:00</published><updated>2023-10-28T20:13:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/10/28/flutter</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/10/28/flutter/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-10-29%2023.46.38.png?alt=media&amp;amp;token=21a68a5f-c346-45fb-911e-8d43c08a8cc1&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;안녕하세요, namedboy 입니다.&lt;/p&gt;
+
+&lt;p&gt;요즘 앱 개발 하면 크로스 플랫폼으로 개발 하고 계시는 분들 많죠?
+플러터도 크로스 플랫폼 개발 언어 입니다.
+처음 앱을 개발 하는데 안드로이드와 아이폰 모두 사용할 수 있는 앱을 개발하기를 원한다면 플루터가 좋은 선택지가 될 수 있습니다.
+플러터 외에도 다른 여러 언어들이 있어서 선택하기에 나름이지만 저도 플루터로 개발을 하고 있는 입장에서 플러터가 꽤 괜찮은 선택이라 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;이 책에서는 개발을 하면서 필요한 것들을 기본 사항으로 가르쳐 주고 있습니다.
+플러터에서 사용하는 언어는 다트라는 언어로 이 언어의 기본적인 사용법과 플루터에서 다루는 위젯과 상태관리 방법, 배포 방법까지 따라하면서 해볼 수 있게 합니다.&lt;/p&gt;
+
+&lt;p&gt;그 이후로는 심화 과정으로 프로젝트 진행을 통해 앱을 개발 할 수 있도록 가이드 해줍니다.&lt;/p&gt;
+
+&lt;p&gt;플러터 자체가 어렵지 않은 구조로 되어 있기 때문에 쉽게 배우고 쉽게 따라할 수 있는 장점이 있습니다.&lt;/p&gt;
+
+&lt;p&gt;책에서도 네이티브 sdk와 연결로 다루고 있지만 플랫폼 채널과 메소드 채널 또한 플러터의 큰 장점이라 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;기본적인 프로그램 개발 지식이 있든 없든 이런 책의 도움이 있다면 간단한 앱 개발 정도는 얼마든지 할 수 있을 것입니다.&lt;/p&gt;
+
+&lt;p&gt;어렵게 시작하지 마시고 책과 함께 즐거운 개발 생활 되시길 빌겠습니다.&lt;/p&gt;
+
+&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="한빛미디어" /><category term="이정주" /><category term="플러터" /><category term="앱" /><category term="개발" /><category term="초보자" /><category term="상용앱" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 사라진 개발자들</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/09/23/%EC%82%AC%EB%9D%BC%EC%A7%84%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4/" rel="alternate" type="text/html" title="[도서리뷰] 사라진 개발자들" /><published>2023-09-23T20:13:00+09:00</published><updated>2023-09-23T20:13:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/09/23/%EC%82%AC%EB%9D%BC%EC%A7%84%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/09/23/%EC%82%AC%EB%9D%BC%EC%A7%84%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-09-24%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.14.38.png?alt=media&amp;amp;token=89dff8f0-98df-4cf3-951e-5b2e946fedd5&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
 
@@ -231,41 +253,4 @@ openai에서 만들었고 그냥 채팅 봇정도로만 알고 계신가요?&lt;
 &lt;p&gt;그 외에도 데이터를 공유하는 대상에 따라 어떤 데이터를 어떤 형태로 보여주는 것이 효과적인 데이터 커뮤니케이션 방법인지 상세하게 기술하고 있어 데이터를 가지고 다른 사람과 소통해야 하는 분에게는 꽤 좋은 참고서가 될 것이라고 생각이 듭니다.&lt;/p&gt;
 
 &lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B5424596013&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="Developer" /><category term="데이터" /><category term="말하기" /><category term="이한호" /><category term="칼올친" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 이것이 안드로이드다 with 코틀린</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/07/22/this-is-android/" rel="alternate" type="text/html" title="[도서리뷰] 이것이 안드로이드다 with 코틀린" /><published>2022-07-22T09:11:00+09:00</published><updated>2022-07-22T09:11:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/07/22/this-is-android</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/07/22/this-is-android/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/this_is_android.jpg?alt=media&amp;amp;token=5201647c-156a-45d4-80ea-3f80227e0d2a&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
-
-&lt;p&gt;개발자 여러분 오늘도 안녕하신가요?
-또는 개발자가 아닌 여러분은 어떠신가요?&lt;/p&gt;
-
-&lt;p&gt;요즘은 정말 많은 사람들이 개발을 배우고 손쉽게 앱을 만들 수 있는 시대인 듯 합니다.
-물론 그게 어렵다고 말씀해주시는 분들도 계시고 같은 개발자라도 모바일 개발을 하려면 어떤 것부터 해야 할지 막막해 하시는 분들도 많은 것 같습니다.&lt;/p&gt;
-
-&lt;p&gt;오늘은 제가 이런 분들에게 도움이 될만한 책을 하나 소개하려고 합니다.&lt;/p&gt;
-
-&lt;p&gt;국내 안드로이드 개발 서적으로 무려 3판째 발행인 “이것이 안드로이드다 with 코들린” 이라는 책입니다.
-IT, 개발쪽은 익히 알고 계시겠지만 굉장히 빠르게 흘러가는 곳입니다.&lt;/p&gt;
-
-&lt;p&gt;그만큼 새로운 언어가 나오고 새로운 문화나 방법론이 정착되는 곳이죠.
-그런 의미로 보면 책이라는 것이 나오기 위해서는 꽤 긴 시간이 필요한데 빠른 IT업계의 속도를 따라가기에는 굉장히 벅차지 않나 하는 생각이 들기도 합니다.&lt;/p&gt;
-
-&lt;p&gt;이런 이유 때문에 “이것이 안드로이드다”가 3판째 개정되어 출판되고 있는 것이 아닌가 싶습니다.
-힘들게 고생해서 책을 만들어 주시는 작가님과 관계자 여러분들에게 참 감사함을 느낍니다.&lt;/p&gt;
-
-&lt;p&gt;갑자기 감사인사를 드렸는데 책 이야기를 안할 수가 없겠죠.&lt;/p&gt;
-
-&lt;p&gt;저는 사실 지금 Flutter라는 언어로 안드로이드 앱을 만들고 있습니다.
-Flutter를 기본으로 만들고는 있지만 Java나 Kotlin을 사용해 안드로이드 측면의 네이티브 코드를 짜기도 합니다.
-그래서 안드로이드에 대한 지식이 전혀 없지는 않은데 이 책은 확실히 안드로이드 개발에 필요한 모든 내용들을 한권에 담아 내려고 많은 노력을 하신 흔적이 보였습니다.&lt;/p&gt;
-
-&lt;p&gt;수많은 스크린샷부터 시작해서 안드로이드 개발을 처음 접하는 분들을 위해 개발 툴 설치부터 차근차근 따라가면서 해볼 수 있도록 책이 구성되어 있습니다.
-그래서 처음부터 어려운 내용을 설명하기보다는 필수적인 언어의 차이점이나 처리방식에 대한 내용만 가볍게 설명하고 바로 본론으로 넘어가 따라할 수 있도록 되어 있습니다.&lt;/p&gt;
-
-&lt;p&gt;그렇게 하나씩 따라가면서 하다 보면 어느새 앱을 만들고 있는 나 자신을 발견하게 되실겁니다.
-그만큼 자세한 설명과 앱을 만드는데 꼭 필요한 내용만을 꾹꾹 눌러담은 느낌입니다.&lt;/p&gt;
-
-&lt;p&gt;만약 안드로이드 개발을 하고 싶고 코틀린을 사용하고 싶으시다면 이 책만큼 정석에 가까운 책이 많지 않을꺼라 생각합니다.
-정말 안드로이드의 정석에 가깝다는 생각이 드네요.&lt;/p&gt;
-
-&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B8929106417&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="Developer" /><category term="안드로이드" /><category term="자바" /><category term="코틀린" /><category term="android" /><category term="java" /><category term="kotlin" /><category term="youtube" /><category term="app" /><category term="moblie" /><category term="googleplay" /><category term="playstore" /><category term="한빛미디어" /><category term="고돈호" /><summary type="html"></summary></entry></feed>
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B5424596013&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="Developer" /><category term="데이터" /><category term="말하기" /><category term="이한호" /><category term="칼올친" /><summary type="html"></summary></entry></feed>
