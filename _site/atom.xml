@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-29T23:53:12+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 초보자도 프로처럼 만드는 플러터 앱 개발</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/10/28/flutter/" rel="alternate" type="text/html" title="[도서리뷰] 초보자도 프로처럼 만드는 플러터 앱 개발" /><published>2023-10-28T20:13:00+09:00</published><updated>2023-10-28T20:13:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/10/28/flutter</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/10/28/flutter/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-10-29%2023.46.38.png?alt=media&amp;amp;token=21a68a5f-c346-45fb-911e-8d43c08a8cc1&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-26T22:43:36+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Just..</title><subtitle>kkokey blog repository</subtitle><author><name>Aron</name></author><entry><title type="html">[도서리뷰] 스티븐 울프럼의 챗GPT 강의</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/11/26/chatgpt/" rel="alternate" type="text/html" title="[도서리뷰] 스티븐 울프럼의 챗GPT 강의" /><published>2023-11-26T20:13:00+09:00</published><updated>2023-11-26T20:13:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/11/26/chatgpt</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/11/26/chatgpt/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/chatgpt.png?alt=media&amp;amp;token=7b937ce2-4dba-4b2c-8bdb-14f96c6960ad&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;챗GPT가 나온지도 벌써 1년이 지났습니다.
+그동안 챗GPT를 사용하면서 혹시 어떤 원리로 동작하는지 궁금하시지는 않았나요?&lt;/p&gt;
+
+&lt;p&gt;기본적으로 챗GPT는 사람의 뇌가 동작하는 방식을 모방한 것입니다.
+책에서는 실제로 챗GPT가 어떤식으로 동작하게 되는지에 대해 첫 단계부터 설명하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;그래서 다소 어려운 내용이 나오기도 하고, 수학적인 내용이 나오기도 합니다.
+하지만 차근차근 읽다보면 그래도 조금 이해가 되고 따라갈 수 있는 수준입니다.&lt;/p&gt;
+
+&lt;p&gt;그렇게 어떻게 만들어지게 되었는지에 대한 내용을 다루고 나면 울프럼이 직접 만든 챗GPT 플러그인을 사용해보는 실습을 진행합니다.
+계산을 할 수 있는 기능을 추가하는 플러그인이니 사용해보시는 걸 추천드립니다.&lt;/p&gt;
+
+&lt;p&gt;챗GPT는 정말 혜성 같이 등장한 서비스라고 생각합니다.
+OpenAI와 샘 알트만의 소식에 정신이 없긴 하지만 그만큼 대단한 서비스고, 세상을 바꿀수도 있을만하다고 생각하기도 합니다.&lt;/p&gt;
+
+&lt;p&gt;앞으로 어떻게 변하게 될지 기대도 되고 챗GPT가 계속해서 변화할 것을 생각하면 지금부터라도 챗GPT의 원리에 대해 이해하고 더 잘 활용할 수 있는 방법을 찾는게 맞다고 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;챗GPT에 대해 궁금하신 분들은 이 책을 읽어보시는 걸 추천드립니다.&lt;/p&gt;
+
+&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B3066214191&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="한빛미디어" /><category term="스티븐울프럼" /><category term="박해선" /><category term="ChatGPT" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 초보자도 프로처럼 만드는 플러터 앱 개발</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/10/28/flutter/" rel="alternate" type="text/html" title="[도서리뷰] 초보자도 프로처럼 만드는 플러터 앱 개발" /><published>2023-10-28T20:13:00+09:00</published><updated>2023-10-28T20:13:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/10/28/flutter</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2023/10/28/flutter/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-10-29%2023.46.38.png?alt=media&amp;amp;token=21a68a5f-c346-45fb-911e-8d43c08a8cc1&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;안녕하세요, namedboy 입니다.&lt;/p&gt;
 
@@ -231,26 +253,4 @@ openai에서 만들었고 그냥 채팅 봇정도로만 알고 계신가요?&lt;
 &lt;p&gt;만약 데이터 시각화를 어떻게 하는지 잘 모르겠다거나 하기는 해야 하는데 해본적이 없어 너무 어렵다면 이 책이 도움이 될꺼라 생각합니다.&lt;/p&gt;
 
 &lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B1996635146&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="Developer" /><category term="데이터시각화" /><category term="김태헌" /><category term="잭" /><category term="도허티" /><category term="일리야" /><category term="일라얀코우" /><summary type="html"></summary></entry><entry><title type="html">[도서리뷰] 데이터로 전문가처럼 말하기</title><link href="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/10/02/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%A0%84%EB%AC%B8%EA%B0%80%EC%B2%98%EB%9F%BC-%EB%A7%90%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="[도서리뷰] 데이터로 전문가처럼 말하기" /><published>2022-10-02T07:11:00+09:00</published><updated>2022-10-02T07:11:00+09:00</updated><id>http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/10/02/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%A0%84%EB%AC%B8%EA%B0%80%EC%B2%98%EB%9F%BC-%EB%A7%90%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EB%8F%84%EC%84%9C%EB%A6%AC%EB%B7%B0/2022/10/02/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%A0%84%EB%AC%B8%EA%B0%80%EC%B2%98%EB%9F%BC-%EB%A7%90%ED%95%98%EA%B8%B0/">&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/github-blog-39e5f.appspot.com/o/data_said.jpg?alt=media&amp;amp;token=44e36f2f-4ce3-41b4-bb30-2644e71a53e2&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;안녕하세요 괴짜 개발자 namedboy 입니다.&lt;/p&gt;
-
-&lt;p&gt;여러분은 데이터를 전달할 때 어떤 형태로 전달하시나요?
-데이터를 수집하고 관리하는 것도 중요하지만 일을 하면서 다른 사람과 데이터를 가지고 잘 소통하는 것도 참 중요합니다.&lt;/p&gt;
-
-&lt;p&gt;데이터를 어떻게 전달하느냐에 따라 굉장히 잘 기억에 남을 수도 있고 내가 전달하고자 하는 핵심적인 내용을 더 효과적으로 전달할 수 있게 되죠.&lt;/p&gt;
-
-&lt;p&gt;데이터를 잘 전달하는 방법중에 대표적인 것 중 하나가 바로 데이터 시각화 입니다.
-적절한 기준과 적절한 표현 방법을 사용하여 전달하면 지금 현재 상태와 앞으로 일어날 일들에 대해 꼼꼼하게 확인하고 체크할 수 있습니다.&lt;/p&gt;
-
-&lt;p&gt;이 책에서는 데이터를 제대로 수집하는 방법에 대해 먼저 다룹니다.
-데이터라는 것은 상황과 형태에 따라 제대로 수집하는 방법이 달라지는데 그 부분에 대해서 친절하게 설명해 주고 있다는 생각이 들었습니다.&lt;/p&gt;
-
-&lt;p&gt;데이터를 제대로 수집 했다면 제대로 표현을 할 수 있어야겠죠.
-데이터의 표현 방법에 있어서는 정확성과 시인성 그리고 그 기준에 대해 다룹니다.
-어떤 데이터는 표로 정확한 수치를 표현하는 것이 좋거나 막대 그래프나 라인 그래프처럼 전체적인 양상이나 비교할 수 있도록 시각화된 데이터가 더 좋은 데이터들이 있는데 해당 내용들이 언제 필요하고 언제 필요 없는지에 대해 자세하게 설명 해줍니다.&lt;/p&gt;
-
-&lt;p&gt;그 외에도 데이터를 공유하는 대상에 따라 어떤 데이터를 어떤 형태로 보여주는 것이 효과적인 데이터 커뮤니케이션 방법인지 상세하게 기술하고 있어 데이터를 가지고 다른 사람과 소통해야 하는 분에게는 꽤 좋은 참고서가 될 것이라고 생각이 듭니다.&lt;/p&gt;
-
-&lt;p&gt;이 리뷰 내용은 한빛미디어 &amp;lt;나는 리뷰어다&amp;gt; 활동을 위해서 책을 제공받아 작성된 서평입니다.&lt;br /&gt;
-책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B5424596013&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="Developer" /><category term="데이터" /><category term="말하기" /><category term="이한호" /><category term="칼올친" /><summary type="html"></summary></entry></feed>
+책의 내용이 궁금하다면 &lt;a href=&quot;https://www.hanbit.co.kr/store/books/look.php?p_code=B1996635146&quot;&gt;이곳&lt;/a&gt;을 통해 확인할 수 있습니다.&lt;/p&gt;</content><author><name>Aron</name></author><category term="도서리뷰" /><category term="Developer" /><category term="데이터시각화" /><category term="김태헌" /><category term="잭" /><category term="도허티" /><category term="일리야" /><category term="일라얀코우" /><summary type="html"></summary></entry></feed>
